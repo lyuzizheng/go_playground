@@ -16,7 +16,7 @@ func main() {
 	fmt.Printf("%p : b pointer\n", b)
 
 	a := interface_test.AutoScalerServiceImpl{}
-	a.ParseMethod("lalalal").ParseParameters("commandInlineString").Redirect()
+	a.ParseMethod("lalalal").ParseParameters("commandInlineString")
 
 
 
