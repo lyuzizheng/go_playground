@@ -1,4 +1,4 @@
-package jsonPlay
+package json
 
 import (
 

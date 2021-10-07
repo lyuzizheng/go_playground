@@ -1,4 +1,4 @@
-package interface_test
+package array
 
 import (
 	"fmt"

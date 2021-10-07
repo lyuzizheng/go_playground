@@ -1,29 +1,25 @@
 package main
 
-import (
-	"code.byted.org/im_cloud/playground/interface_test"
-
-
-
-	"fmt"
-)
+import "code.byted.org/im_cloud/playground/interface"
 
 func main() {
 
+	//array.ArrayCopy()
+	//interface.PointerNilTry()
+	//interface.Verify()
+	//interface.Tutorial()
+	_interface.StructCopy()
+	//interface.StructToInterfaceTest()
 
-	//interface_test.PointerNilTry()
-	//interface_test.Verify()
-	interface_test.Tutorial()
 
 
-
-	//jsonPlay.UnmarshallToInterface()
+	//json.UnmarshallToInterface()
 	//types.TypeCasting()
-	//jsonPlay.JsonEncode()
+	//json.JsonEncode()
 
 	//pointers.PointerDemo()
 
-	//interface_test.CheckSliceSimple()
+	//interface.CheckSliceSimple()
 
 	//var s interface{}
 	//fmt.Println(unsafe.Sizeof(s))
@@ -84,38 +80,3 @@ func main() {
 }
 
 
-type InterfaceA interface {
-	PrintStatus() InterfaceA
-	ChangeStatus() InterfaceA
-}
-
-
-type A struct{
-	Status string
-}
-
-func (a *A) ChangeStatus() InterfaceA {
-	a.Status = "down"
-	return a
-}
-
-func (a *A) PrintStatus() InterfaceA {
-	fmt.Printf("Status A is %s\n", a.Status)
-	return a
-}
-
-
-type TestStruct struct {
-	*A
-}
-
-func (t *TestStruct) ChangeStatus() InterfaceA{
-	t.Status = "up"
-	return t
-}
-
-func (t *TestStruct) PrintStatus() InterfaceA{
-	t.A.PrintStatus()
-	//fmt.Printf("Status T is %s\n", t.Status)
-	return t
-}
