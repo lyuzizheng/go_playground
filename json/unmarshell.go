@@ -82,7 +82,7 @@ func UnmarshallToInterface()  {
 	test3 := "{ \"integer\" : 234, \"booltest\" : true}"
 
 
-	//var result interface{}
+	//var result interfaces{}
 	//err := json.Unmarshal([]byte(test1), &result)
 	//if err != nil {
 	//	fmt.Printf("Error: %s", err.Error())
@@ -90,7 +90,7 @@ func UnmarshallToInterface()  {
 	//	fmt.Printf("Struct: %+v", result)
 	//	fmt.Printf("type is %s", reflect.TypeOf(result))
 	//}
-	//var result2 interface{}
+	//var result2 interfaces{}
 	//err2 := json.Unmarshal([]byte(test2), &result2)
 	//if err2 != nil {
 	//	fmt.Printf("Error: %s", err2.Error())

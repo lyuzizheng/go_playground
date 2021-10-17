@@ -1,15 +1,15 @@
 package main
 
-import "code.byted.org/im_cloud/playground/interface"
-
 func main() {
 
 	//array.ArrayCopy()
-	//interface.PointerNilTry()
-	//interface.Verify()
-	//interface.Tutorial()
-	_interface.StructCopy()
-	//interface.StructToInterfaceTest()
+	//interfaces.PointerNilTry()
+	//interfaces.Verify()
+	//interfaces.Tutorial()
+	//channel.ChannelTest1()   //C
+	//system.ChangeTime()
+
+	//interfaces.EmptyStructPointers()
 
 
 
@@ -19,12 +19,12 @@ func main() {
 
 	//pointers.PointerDemo()
 
-	//interface.CheckSliceSimple()
+	//interfaces.CheckSliceSimple()
 
-	//var s interface{}
+	//var s interfaces{}
 	//fmt.Println(unsafe.Sizeof(s))
 
-	//utils.DumpObject("interface", reflect.ValueOf(&s))
+	//utils.DumpObject("interfaces", reflect.ValueOf(&s))
 
 	//var testStruct InterfaceA
 

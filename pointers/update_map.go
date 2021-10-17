@@ -18,3 +18,30 @@ func NewMap(){
 	UpdateMap(m)
 	fmt.Printf("AfterReturn: %v\n", m)
 }
+
+type Sample struct {
+	A string
+	B int
+}
+
+var structMaps map[string]*Sample
+
+func MapPointers()  {
+	structMaps = make(map[string]*Sample)
+
+
+
+}
+
+func CreateSample(name string, a string, b int) *Sample{
+
+	temp := &Sample{
+		A: a,
+		B: b,
+	}
+
+	structMaps[name] = temp
+
+	return temp
+
+}
