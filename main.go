@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
 
 	//array.ArrayCopy()
@@ -10,7 +14,10 @@ func main() {
 	//system.ChangeTime()
 
 	//interfaces.EmptyStructPointers()
+	//algo.SortProblem()
 
+	//context.TestContextCancel()
+	//interfaces.InterfaceCompare()
 
 
 	//json.UnmarshallToInterface()
@@ -76,7 +83,45 @@ func main() {
 	//fmt.Printf("a: %p, b: %p\n", a, b)
 	//fmt.Printf("a: %p, b: %p\n", &a[0], &a[1])
 	//fmt.Printf("a: %p, b: %p\n", &a[1023], &b[0])
+	var a interface{}
+	a = nil
+	fmt.Println(a == nil)
+	b, ok := a.(A)
+	fmt.Println(ok)
+	fmt.Println(b)
+
 
 }
 
+type A struct {
+	A int64
+}
+
+
+
+
+
+func HowToDeferHard(){
+
+	for i := 0; i < 3; i++ {
+
+		defer func(ii int) {
+
+			fmt.Println(ii)
+
+			i++
+
+			defer func() {
+				fmt.Println(i)
+			}()
+
+			i++
+
+			defer func() {
+				fmt.Println(i)
+			}()
+
+		}(i)
+	}
+}
 

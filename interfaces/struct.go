@@ -2,7 +2,6 @@ package interfaces
 
 import (
 	"code.byted.org/im_cloud/playground/utils"
-	"context"
 	"fmt"
 	"reflect"
 	"strconv"
@@ -87,34 +86,27 @@ type StructKey2 struct{}
 type IntKey1 int
 type IntKey2 int
 
-func ContextMiddleWare(ctx context.Context, value string)  {
+func InterfaceCompare()  {
 
-	type myKey struct{}
-	ctx = context.WithValue(ctx, myKey{}, value) // Set value
-	myValue := ctx.Value(myKey{}).(string)
-
-	fmt.Println(myValue)
+	//type myKey struct{}
+	//ctx = context.WithValue(ctx, myKey{}, value) // Set value
+	//myValue := ctx.Value(myKey{}).(string)
 
 
+	a := 1
 
-a := "dontUseString"
-	b := "dontUseString"
-	utils.CompareInterfaces(a, b) // true
+	b := 1
 
-	// Now let's see how struct{} types behave.
-	// Same struct{} keys are always equal:
-	utils.CompareInterfaces(StructKey1{}, StructKey1{}) // true
-	// Different struct{} keys are never equal even if they appear to be of the same struct{} type:
-	utils.CompareInterfaces(StructKey1{}, StructKey2{}) // false
 
-	// This also applies to int keys. Same type means equal:
-	utils.CompareInterfaces(IntKey1(0), IntKey1(0)) // true
-	// And different keys are never equal even though they have 0 value:
-	utils.CompareInterfaces(IntKey1(0), IntKey2(0)) // false
-	// However, unlike struct{}, an int typed key allows for mistakes with the value:
-	utils.CompareInterfaces(IntKey1(0), IntKey1(1)) // false
-	// To add to why you shouldn't use int typed keys, when seeing that the package define a
-	// key as int, the user might be tempted to pass a primitive 0 instead. Which doesn't work:
-	utils.CompareInterfaces(IntKey1(0), 0) // false
+	CompareInterfaces(StructKey1{}, StructKey1{})
+	CompareInterfaces(StructKey1{}, StructKey2{})
+	CompareInterfaces(IntKey1(0), IntKey2(0))
+	CompareInterfaces(IntKey1(0), 0)
+	CompareInterfaces(a, 1)
+	CompareInterfaces(IntKey1(a), IntKey1(b))
 
+}
+
+func CompareInterfaces(a interface{}, b interface{})  {
+	fmt.Println(a == b)
 }
