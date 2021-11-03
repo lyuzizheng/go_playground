@@ -9,66 +9,70 @@ func swap(a *[]float64, i int, j int) {
 	(*a)[i], (*a)[j] = (*a)[j], (*a)[i]
 }
 
-const maxNum = 1000
 
-func QuickSort(a *[]float64, left int, right int) {
-	if right <= left {
-		return
-	}
-	if (right - left) < 30 {
-		InsertionSort(a, left, right)
+const (
+	concurrentLimit = 2000
+	quicksortLimit = 30
+)
+
+func QuickSort(f *[]float64, left int, right int) {
+	if (right - left) < quicksortLimit {
+		InsertionSort(f, left, right)
 		return
 	}
 	idx := left
-	pivotIndex := findPivot(a, left, right)
-	swap(a, pivotIndex, right)
+	//pivotIndex := findPivot(f, left, right)
+	pivotIndex := left
+	swap(f, pivotIndex, right)
 	for i := left; i < right; i++ {
-		if (*a)[i] < (*a)[right] {
-			swap(a, i, idx)
+		if (*f)[i] < (*f)[right] {
+			swap(f, i, idx)
 			idx++
 		}
 	}
-	swap(a, idx, right)
-	QuickSort(a, left, idx)
-	QuickSort(a, idx+1, right)
+	swap(f, idx, right)
+	QuickSort(f, left, idx)
+	QuickSort(f, idx+1, right)
 	return
 }
 
-func ConcurrentQuickSort(a *[]float64, left int, right int, ) {
-	if (right - left) < maxNum {
-		QuickSort(a, left, right)
+func ConcurrentQuickSort(f *[]float64, left int, right int ) {
+	if (right - left) <  concurrentLimit {
+		QuickSort(f, left, right)
 		return
 	}
 	idx := left
-	pivotIndex := findPivot(a, left, right)
-	swap(a, pivotIndex, right)
+	//pivotIndex := findPivot(f, left, right)
+	pivotIndex := left
+	swap(f, pivotIndex, right)
 	for i := left; i < right; i++ {
-		if (*a)[i] < (*a)[right] {
-			swap(a, i, idx)
+		if (*f)[i] < (*f)[right] {
+			swap(f, i, idx)
 			idx++
 		}
 	}
-	swap(a, idx, right)
+	swap(f, idx, right)
 
 	var wg sync.WaitGroup
 	wg.Add(1)
 	go func() {
-		defer wg.Done()
-		ConcurrentQuickSort(a, left, idx)
+		ConcurrentQuickSort(f, left, idx)
+		wg.Done()
 	}()
-	ConcurrentQuickSort(a, idx+1, right)
+	ConcurrentQuickSort(f, idx+1, right)
 	wg.Wait()
 	return
 }
 
 func findPivot(f *[]float64, left int, right int)int{
+	middle := (left+right) >> 1
 	a := (*f)[left]
-	b := (*f)[(left+right) >> 1]
+	b := (*f)[middle]
 	c := (*f)[right]
 	if a < b {
 		switch {
 		case b < c:
-			return (left+right) >> 1
+			return middle
 		case a < c:
 			return right
 		default:
@@ -81,15 +85,15 @@ func findPivot(f *[]float64, left int, right int)int{
 	case b < c:
 		return right
 	default:
-		return (left+right) >> 1
+		return middle
 	}
 }
 
 
-func InsertionSort(v *[]float64, left int, right int) {
+func InsertionSort(f *[]float64, left int, right int) {
 	for i := left; i <= right; i++ {
-		for j := i; j > 0 && (*v)[j-1] > (*v)[j]; j-- {
-			swap(v, j, j-1)
+		for j := i; j > 0 && (*f)[j-1] > (*f)[j]; j-- {
+			swap(f, j, j-1)
 		}
 	}
 }

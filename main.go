@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
 
 	//array.ArrayCopy()
@@ -14,7 +10,14 @@ func main() {
 	//system.ChangeTime()
 
 	//interfaces.EmptyStructPointers()
-	//algo.SortProblem()
+	//algo.RunGame()
+	//uid := int64(6691213328788014082)
+	//
+	//fmt.Println(uid)
+	//
+	//remainder := uid & 0xFFF
+	//
+	//fmt.Println(remainder)
 
 	//context.TestContextCancel()
 	//interfaces.InterfaceCompare()
@@ -83,45 +86,9 @@ func main() {
 	//fmt.Printf("a: %p, b: %p\n", a, b)
 	//fmt.Printf("a: %p, b: %p\n", &a[0], &a[1])
 	//fmt.Printf("a: %p, b: %p\n", &a[1023], &b[0])
-	var a interface{}
-	a = nil
-	fmt.Println(a == nil)
-	b, ok := a.(A)
-	fmt.Println(ok)
-	fmt.Println(b)
 
 
 }
 
-type A struct {
-	A int64
-}
 
-
-
-
-
-func HowToDeferHard(){
-
-	for i := 0; i < 3; i++ {
-
-		defer func(ii int) {
-
-			fmt.Println(ii)
-
-			i++
-
-			defer func() {
-				fmt.Println(i)
-			}()
-
-			i++
-
-			defer func() {
-				fmt.Println(i)
-			}()
-
-		}(i)
-	}
-}
 
