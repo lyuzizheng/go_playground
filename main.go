@@ -1,6 +1,42 @@
 package main
 
+import (
+	"code.byted.org/im_cloud/playground/leetcode/daily_contest"
+	"fmt"
+)
+
 func main() {
+
+	fmt.Println(daily_contest.DetectCapitalUse("USA"))
+	fmt.Println(daily_contest.DetectCapitalUse("sdasfage"))
+	fmt.Println(daily_contest.DetectCapitalUse("WEvdvdva"))
+	fmt.Println(daily_contest.DetectCapitalUse("Kvevubaivs"))
+
+	//runtime.GOMAXPROCS(10)
+
+	//var yes int
+	//var no int
+	////json.UnmarshallFromInterfacrand")
+	//rand.Seed(time.Now().UnixNano())
+	//for i := 0; i < 100000; i++ {
+	//	a := rand.Int63() & 0xFFF
+	//	if a < 1024 {
+	//		yes++
+	//	} else {
+	//		no++
+	//	}
+	//}
+	//fmt.Println(yes)
+	//fmt.Println(no)
+	//
+	//stringA := `{name: zizheng}`
+	//
+	//var man Man
+	//json.Unmarshal([]byte(stringA), &man)
+	//
+	//fmt.Println(nil == man.body)
+
+	//http.TestDataCloudQps()
 
 	//array.ArrayCopy()
 	//interfaces.PointerNilTry()

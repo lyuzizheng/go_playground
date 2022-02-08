@@ -23,6 +23,7 @@ type CardTemplate1 struct {
 	Message string `json:"message"`
 	//Compulsory
 	FootNote string              `json:"foot_note"`
+	Extra  []string `json:"extra"`
 }
 
 func (c CardTemplate1) ToCard(defaultOpenChatID string) interface{} {
@@ -61,6 +62,7 @@ func UnmarshallFromInterface(templateID string){
 		cardNew := CardTemplate1{}
 		err = json.Unmarshal([]byte(rawCard), &cardNew)
 		card = cardNew
+		fmt.Println(len(cardNew.Extra))
 	default:
 		cardNew := CardTemplateDefault{}
 		err = json.Unmarshal([]byte(rawCard), &cardNew)

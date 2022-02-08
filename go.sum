@@ -287,8 +287,6 @@ code.byted.org/im_cloud/im_common v0.0.0-20211018030818-6ccb2c8149c8 h1:Yx8berJ6
 code.byted.org/im_cloud/im_common v0.0.0-20211018030818-6ccb2c8149c8/go.mod h1:BOytTAUKgX7L1hyXUAwi9+84fFB3EgybZvjCTZZQ8+I=
 code.byted.org/im_cloud/inbox_api v0.0.0-20190604102131-8672930e1f48/go.mod h1:YDhz4uvFB2eTqwd2cTpLZWnzveB/ZFwJN4wxjdWK7c8=
 code.byted.org/im_cloud/key_manager v0.0.0-20190612025215-b8e5bfe40572/go.mod h1:e+0xLD4v77VadY6hbDv7O7gxbHGUjX7bCR1jMBb+BPQ=
-code.byted.org/im_cloud/lark_bot_sdk v0.0.0-20211103055932-cddd948e112b h1:VGFSg/NJ7js/fUft1YnROO/XX8yEsX4W4x/9kBr9x8I=
-code.byted.org/im_cloud/lark_bot_sdk v0.0.0-20211103055932-cddd948e112b/go.mod h1:LepNduRu76MpSdoZ4GwlcFhHddY88teBUxAgmCQ0pxs=
 code.byted.org/im_cloud/message_api v0.0.0-20211026073549-be97d2a32e63 h1:LDO5kpG2ajyVbOptJCS6zKMLEI0wIa77caK7wLnHPXc=
 code.byted.org/im_cloud/message_api v0.0.0-20211026073549-be97d2a32e63/go.mod h1:Vr7iVrmckm50TTL9/ZgBkYiLEmr/a3MHci75YhVLAxU=
 code.byted.org/im_cloud/push v0.0.0-20211102065341-dfc328d338a8 h1:tan2Tj9TX2NXQyBmguFrRBClHGSqwaXLyp4l7mbgG1g=
