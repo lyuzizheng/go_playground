@@ -1,16 +1,16 @@
 package main
 
-import (
-	"code.byted.org/im_cloud/playground/leetcode/daily_contest"
-	"fmt"
-)
-
 func main() {
 
-	fmt.Println(daily_contest.DetectCapitalUse("USA"))
-	fmt.Println(daily_contest.DetectCapitalUse("sdasfage"))
-	fmt.Println(daily_contest.DetectCapitalUse("WEvdvdva"))
-	fmt.Println(daily_contest.DetectCapitalUse("Kvevubaivs"))
+	//fmt.Println(daily_contest.DetectCapitalUse("USA"))
+	//fmt.Println(daily_contest.DetectCapitalUse("sdasfage"))
+	//fmt.Println(daily_contest.DetectCapitalUse("WEvdvdva"))
+	//fmt.Println(daily_contest.DetectCapitalUse("Kvevubaivs"))
+
+
+
+
+
 
 	//runtime.GOMAXPROCS(10)
 
