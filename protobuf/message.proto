@@ -1,0 +1,104 @@
+syntax = "proto2";
+package proto;
+
+enum EventType {
+    UNKNOWN = 1;
+    INSERT = 2;
+    UPDATE = 3;
+    DELETE = 4;
+    RENAME = 5;
+    ALTER = 6;
+    CINDEX = 7;
+    DINDEX = 8;
+    CTABLE = 9;
+    DTABLE = 10;
+    // begin/commit
+    QUERY = 11;
+    CDATABASE = 12;
+    DDATABASE = 13;
+    TRUNCATE = 14;
+}
+
+enum EntryType {
+    BEGIN = 1;
+    COMMIT = 2;
+    DML = 3;
+    DDL = 4;
+}
+
+message EntryHeader {
+    optional int64 tpipe_message_offset = 1;
+    optional uint64 drc_message_id = 2;
+    // generate time
+    required int64 timestamp = 3;
+    required uint64 source_cluster_id = 5;
+    required uint32 server_id = 6;
+    required uint32 dc_id = 7;
+    optional uint32 start_execute_time = 8;
+    optional string database = 9;
+    optional string table = 10;
+    required EntryType entry_type = 11;
+    repeated Index indexes = 12;
+    repeated Pair props = 13; // 预留扩展
+}
+
+message Index {
+    required string name = 1;
+    repeated int32 column_index = 2;
+}
+
+message Entry {
+    required EntryHeader header = 1;
+    required EntryBody body = 2;
+}
+
+message EntryBody {
+    repeated RowData rowdatas = 1;
+    required EventType event_type = 2;
+    // begin or commit or ddl
+    optional string sql = 3;
+    optional uint64 tableId = 4;
+}
+
+message RowData {
+    repeated Column before_image = 1;
+    repeated Column after_image = 2;
+}
+
+message Column {
+    required int32 index = 1;
+    required string name = 2;
+    optional bool is_pk = 3;
+    optional bool updated = 4;
+    // is nullable, not actually value
+    optional bool is_nullable = 5;
+    // whether value is null
+    required bool null = 6;
+    optional string sql_type = 7;
+    optional string value = 8;
+    optional bool is_unsigned = 9;
+    repeated Pair props = 13; // 预留扩展
+
+}
+
+/**预留扩展**/
+message Pair{
+    optional string key	= 1;
+    optional string value = 2;
+}
+
+enum MessageType {
+    FULL = 1;
+    FIRST = 2;
+    MIDDLE = 3;
+    LAST = 4;
+}
+
+message Message {
+    // filled by importer
+    optional int64 tpipe_message_offset = 1;
+    // filled by dumper
+    required uint64 drc_message_id = 2;
+    required MessageType type = 3;
+    required bytes payload = 4;
+}

@@ -3,30 +3,25 @@ package http
 import (
 	"encoding/csv"
 	"fmt"
-	"github.com/go-resty/resty/v2"
 	"io"
 	"os"
 	"sync"
 	"time"
 )
 
-var client  *resty.Client
+var client *resty.Client
 var cnt Count
 var waitGroup sync.WaitGroup
 
 type Count struct {
 	count int64
-	lock sync.Mutex
+	lock  sync.Mutex
 }
-
-
 
 func init() {
 	client = resty.New()
 	cnt = Count{count: 0}
 }
-
-
 
 func doDataCloudReq(ip string) {
 
@@ -50,11 +45,9 @@ func doDataCloudReq(ip string) {
 	fmt.Println(result)
 	cnt.lock.Unlock()
 
-
 }
 
-
-func TestDataCloudQps(){
+func TestDataCloudQps() {
 
 	f, err := os.Open("http/test.csv")
 
@@ -80,7 +73,5 @@ func TestDataCloudQps(){
 	}
 
 	waitGroup.Wait()
-
-
 
 }

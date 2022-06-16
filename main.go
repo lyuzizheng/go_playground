@@ -1,16 +1,19 @@
 package main
 
+import "fmt"
+
 func main() {
+
+	a := make([]int, 0, 10)
+	a = append(a, 1)
+	fmt.Println(a)
+	fmt.Println(len(a))
+	fmt.Println(a[0:2])
 
 	//fmt.Println(daily_contest.DetectCapitalUse("USA"))
 	//fmt.Println(daily_contest.DetectCapitalUse("sdasfage"))
 	//fmt.Println(daily_contest.DetectCapitalUse("WEvdvdva"))
 	//fmt.Println(daily_contest.DetectCapitalUse("Kvevubaivs"))
-
-
-
-
-
 
 	//runtime.GOMAXPROCS(10)
 
@@ -57,7 +60,6 @@ func main() {
 
 	//context.TestContextCancel()
 	//interfaces.InterfaceCompare()
-
 
 	//json.UnmarshallToInterface()
 	//types.TypeCasting()
@@ -115,14 +117,11 @@ func main() {
 	//fmt.Println(unsafe.Sizeof(S2{}))
 	//fmt.Println(unsafe.Sizeof(S3{}))
 
-
-
 	//a := make([]int8, 1024)
 	//b := make([]int8, 1024)
 	//fmt.Printf("a: %p, b: %p\n", a, b)
 	//fmt.Printf("a: %p, b: %p\n", &a[0], &a[1])
 	//fmt.Printf("a: %p, b: %p\n", &a[1023], &b[0])
-
 
 }
 
