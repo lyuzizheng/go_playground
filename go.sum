@@ -184,6 +184,8 @@ code.byted.org/gopkg/logs v1.1.12/go.mod h1:JPSK2oqotOEW8PS1lsdkNVAX0T4MBs6EmsWe
 code.byted.org/gopkg/logs v1.1.13-0.20210411070931-651c06f82791/go.mod h1:GCz5kAK+ZH1Fj2Jr7UhZzonbaijUPJiJfKUJ470/tlQ=
 code.byted.org/gopkg/logs v1.2.3 h1:xTt4fmadQjqF+WvGH8r9E82o0BH4lNjsnNIKWoR641U=
 code.byted.org/gopkg/logs v1.2.3/go.mod h1:6byje1XIQIILaV2dZJlj6oYzjTCfp7M46+UsqheF5d4=
+code.byted.org/gopkg/logs v1.2.13/go.mod h1:lu8RdGDzovU+qUWrsPN5d9I7NXKbcl9DlILqwIDsgyc=
+code.byted.org/gopkg/logs v1.2.14/go.mod h1:OJ6preIDJtzvcIuuG1uZP/tYpgMl2xgPhQHk+9ySNmM=
 code.byted.org/gopkg/logs/v2 v2.0.19/go.mod h1:jZGyk9C8HyhyQiWPg9wJY+/jhR1h+Qikko9CH8Z7mpw=
 code.byted.org/gopkg/logs/v2 v2.1.4/go.mod h1:/GWEsPPEJAta4cequJ1WE6zzMJuvdtD7L8RAjE1XXXE=
 code.byted.org/gopkg/logs/v2 v2.1.6 h1:TB/yUwYF0EW7gE1NQn1tygYO1K21AZ8ccaDl6OxjCTg=
@@ -209,6 +211,8 @@ code.byted.org/gopkg/metrics v1.4.6/go.mod h1:BbVL8NRam9VwmPYh7zVIx1EKjjmbKNF5nb
 code.byted.org/gopkg/metrics v1.4.7-0.20210419034413-9db2fa1a661b/go.mod h1:BbVL8NRam9VwmPYh7zVIx1EKjjmbKNF5nb+yZdcyZLo=
 code.byted.org/gopkg/metrics v1.4.11 h1:AEHfn9DSQ0zRy7iOi4gI3j6haDk5ZB+eM2CANVfDmoY=
 code.byted.org/gopkg/metrics v1.4.11/go.mod h1:63o3+ucqZdu5XiJy6nyaX6/suytBPrs5quyZ3kMYkrc=
+code.byted.org/gopkg/metrics v1.4.15/go.mod h1:63o3+ucqZdu5XiJy6nyaX6/suytBPrs5quyZ3kMYkrc=
+code.byted.org/gopkg/metrics v1.4.21/go.mod h1:63o3+ucqZdu5XiJy6nyaX6/suytBPrs5quyZ3kMYkrc=
 code.byted.org/gopkg/metrics/v3 v3.0.7/go.mod h1:Ku9IIZiDGuwFrBlMnmaBcchLgIxVD6sbaFZv+Mn0v+Y=
 code.byted.org/gopkg/metrics/v3 v3.0.11/go.mod h1:Ku9IIZiDGuwFrBlMnmaBcchLgIxVD6sbaFZv+Mn0v+Y=
 code.byted.org/gopkg/metrics/v3 v3.0.14/go.mod h1:NhefMVKiYOoTwNiUYxQhv5ynjXwmLniPsVl4Q+1hHYg=
@@ -276,8 +280,13 @@ code.byted.org/gopkg/thrift v1.6.1 h1:rJjZSp8cCPDZL6r4Pi/EvK/qrNhR+gUwAotXfyRBMu
 code.byted.org/gopkg/thrift v1.6.1/go.mod h1:AVT7iDLwYv/dBYJ4hSzRWFMElMwVUzWD+hDl0WcCeLY=
 code.byted.org/gopkg/tos v1.2.0/go.mod h1:mWgHzUGsSU0TJ549pHL5ruccl7ac98nhU7fbAMGJ2kM=
 code.byted.org/hystrix/hystrix-go v0.0.0-20190214095017-a2a890c81cd5/go.mod h1:8WomP2KtxDgPCeT9NYj3YsrGeerLJ11M1QktjYUpTfI=
+code.byted.org/iesarch/themis-client-go/v2 v2.1.3/go.mod h1:ZtK8dFBLS+ygRE2QrnplSohd8CM+PCbH+dG70dc0LDc=
 code.byted.org/im_cloud/cluster_isolation v0.0.0-20180926063510-2873aa560c75/go.mod h1:TFKB8qI0jpAHVB0woH//CppmcWAkyP4GxxtVgtbifxc=
 code.byted.org/im_cloud/common v0.0.0-20211020040956-0a4e0c8f4821/go.mod h1:jxYpQjDEztSQfWkosX86WjrR/SjmKGsAyNwULLkon+I=
+code.byted.org/im_cloud/common_tiktok v1.0.13-0.20220902053612-6b1e2855f017 h1:ybypdmBnakw7/+TDzA+dQoF4f6+hYKzqRF1m5N+aVWg=
+code.byted.org/im_cloud/common_tiktok v1.0.13-0.20220902053612-6b1e2855f017/go.mod h1:hKTZY2mlVasVjw0CnjG/y3BJWj4ClkqwSdVk/u+HpNk=
+code.byted.org/im_cloud/common_tiktok v1.1.15-0.20221116054052-511943c239e6 h1:+3/pUcL9WrLdVKWzrVCJjvNtO8kBSO/WCpQXtwdRQxY=
+code.byted.org/im_cloud/common_tiktok v1.1.15-0.20221116054052-511943c239e6/go.mod h1:UGq8YHNvkvHm/60+T9ExNliK2XQN6hRpXRGgeq/rf4A=
 code.byted.org/im_cloud/diagnose_tool_sdk v0.0.0-20211101065507-0e6a5bb7a0f3/go.mod h1:SnEoL/4Wwkm2mDdQHzHGrH/3OCI0Qa8Riul1y7wqbKQ=
 code.byted.org/im_cloud/diagnose_tool_sdk v0.0.0-20211103025022-b3f380622cf9 h1:tkIyK05qLzqzghGht0SV49KdHAmxbG6H1pnYh0cAOcM=
 code.byted.org/im_cloud/diagnose_tool_sdk v0.0.0-20211103025022-b3f380622cf9/go.mod h1:SnEoL/4Wwkm2mDdQHzHGrH/3OCI0Qa8Riul1y7wqbKQ=
@@ -297,6 +306,7 @@ code.byted.org/inf/infsecc v0.0.0-20200709032453-09362e940c6e/go.mod h1:6OWOcSHg
 code.byted.org/inf/infsecc v1.0.1/go.mod h1:6OWOcSHg5lXhPgXGnnKSH4AN4OJnjcVqlvKCODqWuHM=
 code.byted.org/inf/infsecc v1.0.2 h1:yzaa52/aB4z56SDGPWLpQsc7s5IYAup5FmdIEGKl+7k=
 code.byted.org/inf/infsecc v1.0.2/go.mod h1:6OWOcSHg5lXhPgXGnnKSH4AN4OJnjcVqlvKCODqWuHM=
+code.byted.org/inf/infsecc v1.0.3/go.mod h1:6OWOcSHg5lXhPgXGnnKSH4AN4OJnjcVqlvKCODqWuHM=
 code.byted.org/inf/sarama v1.3.5/go.mod h1:E1yS0aabLFGD7x4jnMWakpoWP11cg1lEVKTDUGKhOpU=
 code.byted.org/inf/sarama v1.3.8/go.mod h1:E1yS0aabLFGD7x4jnMWakpoWP11cg1lEVKTDUGKhOpU=
 code.byted.org/kite/endpoint v3.7.3+incompatible/go.mod h1:exI+/MBwWWw67QfXiJleQV3DY86ox1BFsnGk1xqmYDM=
@@ -308,6 +318,8 @@ code.byted.org/kite/kitc v3.10.17+incompatible/go.mod h1:DQxo6izaV3CXXzpUApRnGmj
 code.byted.org/kite/kitc v3.10.18+incompatible/go.mod h1:DQxo6izaV3CXXzpUApRnGmjzSwutlLb50EDlSTZxf3M=
 code.byted.org/kite/kitc v3.10.20+incompatible h1:2AruKytt+7Aup+pJOVOm2VEPey2i77ZQZPnARaEfiuE=
 code.byted.org/kite/kitc v3.10.20+incompatible/go.mod h1:DQxo6izaV3CXXzpUApRnGmjzSwutlLb50EDlSTZxf3M=
+code.byted.org/kite/kitc v3.10.21+incompatible/go.mod h1:DQxo6izaV3CXXzpUApRnGmjzSwutlLb50EDlSTZxf3M=
+code.byted.org/kite/kitc v3.10.22+incompatible/go.mod h1:DQxo6izaV3CXXzpUApRnGmjzSwutlLb50EDlSTZxf3M=
 code.byted.org/kite/kite v3.9.17+incompatible/go.mod h1:NrkZ92iMAA0jjJ4oHu9jEMnd6EECMDgB2IOrOx+/MMo=
 code.byted.org/kite/kite v3.9.23+incompatible/go.mod h1:NrkZ92iMAA0jjJ4oHu9jEMnd6EECMDgB2IOrOx+/MMo=
 code.byted.org/kite/kite v3.9.30+incompatible/go.mod h1:NrkZ92iMAA0jjJ4oHu9jEMnd6EECMDgB2IOrOx+/MMo=
@@ -322,6 +334,7 @@ code.byted.org/kite/kitutil v3.7.10+incompatible/go.mod h1:vjUvqAPPXmfROxusLDIJs
 code.byted.org/kite/kitutil v3.7.17+incompatible/go.mod h1:vjUvqAPPXmfROxusLDIJs+BMDzjgFsvVMyQ0dDr9JdA=
 code.byted.org/kite/kitutil v3.8.3+incompatible h1:nnXwerNCWZD0vHVyGALXFob6kb7DK3uJBhMkgnSzP9w=
 code.byted.org/kite/kitutil v3.8.3+incompatible/go.mod h1:vjUvqAPPXmfROxusLDIJs+BMDzjgFsvVMyQ0dDr9JdA=
+code.byted.org/kite/kitutil v3.8.4+incompatible/go.mod h1:vjUvqAPPXmfROxusLDIJs+BMDzjgFsvVMyQ0dDr9JdA=
 code.byted.org/kite/logid v0.0.0-20161214093428-d5c6dce86431/go.mod h1:L7012SeM9cZKlRQT6so5GHRhqaR5n98k4BVN55XG6bM=
 code.byted.org/kitex/updater v0.0.0-20200921102538-dbe78eb45dfa/go.mod h1:T0pxytxkkDMVDTpyql8XcQOTq2qumS5Ry1dI16TuDrE=
 code.byted.org/kv/backoff v0.0.0-20191031070508-5d868504e646/go.mod h1:hd6KEe6unRe/wjPVHA/qYGyec5d8aHI0bAMSVBpb9HI=
@@ -368,6 +381,8 @@ code.byted.org/middleware/framework_version_collector_client v3.6.0+incompatible
 code.byted.org/middleware/hertz v0.2.1/go.mod h1:xrbO2OrkuOE71oYJzRHWC4Nj38Zxc3AF7hwllYKady4=
 code.byted.org/middleware/hertz v1.0.0 h1:jWKKzsQtbeS5rTYFb73wNeDpJNJcQaLSbf/R0wVKqxo=
 code.byted.org/middleware/hertz v1.0.0/go.mod h1:5nT4ASWqdAlTmUd/GzAzW/jYzBJ4TP6ppGHad+beO8M=
+code.byted.org/middleware/hertz v1.5.2/go.mod h1:8p5LkSOwz4BrzO5iwWMyjr9eQt4IuEjqbPya89YbkYA=
+code.byted.org/middleware/hertz v1.6.1/go.mod h1:aq7iNXgpOaOklkbEe5lAJBVUYFr61D8I73lf/gXlEbc=
 code.byted.org/middleware/mcache v0.0.0-20201116091728-d2581c4885d3/go.mod h1:p++WJs8/9HX7RkktmJKZ0726XTL1BcwmtD5iu0LZsHE=
 code.byted.org/middleware/multisyscall v0.0.0-20200423080544-5513823b88c2/go.mod h1:L+camCIt0z3/4XMrkTCrMFSfmaN+JvIDDUAz+Kl0YpA=
 code.byted.org/middleware/netpoll v0.6.1/go.mod h1:Dl3DYxSFCLEsxft9XqxLg1SqBkXvHlu3fYFuCEak0Wk=
@@ -409,6 +424,7 @@ code.byted.org/thriftgo/thriftgo v0.0.14/go.mod h1:dad/TGQk2B3tS00ez/sO0dYBpdkMG
 code.byted.org/thriftgo/thriftgo v0.0.18/go.mod h1:dad/TGQk2B3tS00ez/sO0dYBpdkMGiHhgp5kke78RZk=
 code.byted.org/thriftgo/thriftgo v0.0.21/go.mod h1:dad/TGQk2B3tS00ez/sO0dYBpdkMGiHhgp5kke78RZk=
 code.byted.org/thriftgo/thriftgo v0.0.24/go.mod h1:dad/TGQk2B3tS00ez/sO0dYBpdkMGiHhgp5kke78RZk=
+code.byted.org/tiktok/rpc_gen v1.2.9-0.20220823064529-3e944f170753/go.mod h1:nkvnsVPPARbrcgBPq1RWEcy1A9yF3BJeiYyEyHQoSHE=
 code.byted.org/tmq/kafka-client v1.0.1/go.mod h1:Hs/yWpdfF6WyhUNGW0CphVuNCn3kRTwcXpkWENnQapY=
 code.byted.org/tmq/kafka-client v1.0.2/go.mod h1:Hs/yWpdfF6WyhUNGW0CphVuNCn3kRTwcXpkWENnQapY=
 code.byted.org/tmq/kafka-client v1.0.4/go.mod h1:Hs/yWpdfF6WyhUNGW0CphVuNCn3kRTwcXpkWENnQapY=
@@ -430,6 +446,7 @@ code.byted.org/trace/trace-client-go v1.3.6 h1:T1zkx8mDuaZSF6NmGPLhD3oDTMHYU8pGh
 code.byted.org/trace/trace-client-go v1.3.6/go.mod h1:o8WMdE++BVs0IsJ/WCNrpUr8NV8rCUdA422kNLf5rXQ=
 code.byted.org/ucenter/crypto_kit v1.1.5/go.mod h1:YhJz9y1ZKB3P1EsZ1C3dV2IVKnNzwkqCzbQhwJRY2fU=
 code.byted.org/ucenter/crypto_so/v2 v2.0.6/go.mod h1:OpeJ758Gv55wSk5F/BqVLc16ojhTVtQeABDLMQqdaag=
+code.byted.org/videoarch/vstorage-common v1.0.2/go.mod h1:aufL5zsQ6s1kpI09eicWJaeBjsDA+GPc8IIeP+RQ6oQ=
 dmitri.shuralyov.com/gpu/mtl v0.0.0-20190408044501-666a987793e9/go.mod h1:H6x//7gZCb22OMCxBHrMx7a5I7Hp++hsVxbQ4BYO7hU=
 git.byted.org/toutiao/ttarch/byteconf/common v0.0.0-20201130095524-ae261279c17e/go.mod h1:UCRxlAlKfV6sAsMwSYAqMvsg4n4ehd7dX4fgkf8j8yM=
 git.byted.org/toutiao/ttarch/byteconf/common v0.0.0-20201221090923-3381543a8535/go.mod h1:UCRxlAlKfV6sAsMwSYAqMvsg4n4ehd7dX4fgkf8j8yM=
@@ -504,6 +521,8 @@ github.com/bytedance/gopkg v0.0.0-20210705062217-74c74ebadcae/go.mod h1:birsdqRC
 github.com/bytedance/gopkg v0.0.0-20210716082555-acbf5a2aa7e2/go.mod h1:birsdqRCbwnckJbdAvcSao+AzOyibVEoWB55MjpYpB8=
 github.com/bytedance/gopkg v0.0.0-20210910103821-e4efae9c17c3 h1:jPrNjVwtUPmYBV0Mn+okcc+qa+y6hXfJAU6fApVlZ18=
 github.com/bytedance/gopkg v0.0.0-20210910103821-e4efae9c17c3/go.mod h1:birsdqRCbwnckJbdAvcSao+AzOyibVEoWB55MjpYpB8=
+github.com/bytedance/gopkg v0.0.0-20220413063733-65bf48ffb3a7 h1:PtwsQyQJGxf8iaPptPNaduEIu9BnrNms+pcRdHAxZaM=
+github.com/bytedance/gopkg v0.0.0-20220413063733-65bf48ffb3a7/go.mod h1:2ZlV9BaUH4+NXIBF0aMdKKAnHTzqH+iMU4KUjAbL23Q=
 github.com/casbin/casbin/v2 v2.1.2/go.mod h1:YcPU1XXisHhLzuxH9coDNf2FbKpjGlbCg3n9yuLkIJQ=
 github.com/cenk/backoff v2.1.1+incompatible/go.mod h1:7FtoeaSnHoZnmZzz47cM35Y9nSW7tNyaidugnHTaFDE=
 github.com/cenk/backoff v2.2.1+incompatible/go.mod h1:7FtoeaSnHoZnmZzz47cM35Y9nSW7tNyaidugnHTaFDE=
@@ -532,6 +551,8 @@ github.com/cloudwego/netpoll v0.0.2/go.mod h1:rZOiNI0FYjuvNybXKKhAPUja03loJi/cdv
 github.com/cloudwego/netpoll v0.0.3/go.mod h1:rZOiNI0FYjuvNybXKKhAPUja03loJi/cdv2F55AE6E8=
 github.com/cloudwego/netpoll v0.0.4 h1:wN+N2JIQMjKOF1x9XaTQDJsEUx/exMBuSGD6YRsLFzg=
 github.com/cloudwego/netpoll v0.0.4/go.mod h1:rZOiNI0FYjuvNybXKKhAPUja03loJi/cdv2F55AE6E8=
+github.com/cloudwego/netpoll v0.2.5 h1:ojuAPsQqiQVM9XHd1s8trix2dLJbyDZ0fPPu6dWTT78=
+github.com/cloudwego/netpoll v0.2.5/go.mod h1:1T2WVuQ+MQw6h6DpE45MohSvDTKdy2DlzCx2KsnPI4E=
 github.com/cloudwego/thriftgo v0.0.1/go.mod h1:LzeafuLSiHA9JTiWC8TIMIq64iadeObgRUhmVG1OC/w=
 github.com/cncf/udpa/go v0.0.0-20191209042840-269d4d468f6f/go.mod h1:M8M6+tZqaGXZJjfX53e64911xZQV5JYwmTeXPW+k8Sc=
 github.com/cncf/udpa/go v0.0.0-20200629203442-efcf912fb354/go.mod h1:WmhPx2Nbnhtbo57+VJT5O0JRkEi1Wbu0z5j0R8u5Hbk=
@@ -616,8 +637,6 @@ github.com/go-playground/locales v0.13.0/go.mod h1:taPMhCMXrRLJO55olJkUXHZBHCxTM
 github.com/go-playground/universal-translator v0.16.0/go.mod h1:1AnU7NaIRDWWzGEKwgtJRd2xk99HeFyHw3yid4rvQIY=
 github.com/go-playground/universal-translator v0.17.0/go.mod h1:UkSxE5sNxxRwHyU+Scu5vgOQjsIJAF8j9muTVoKLVtA=
 github.com/go-playground/validator/v10 v10.2.0/go.mod h1:uOYAAleCW8F/7oMFd6aG0GOhaH6EGOAJShg8Id5JGkI=
-github.com/go-resty/resty/v2 v2.6.0 h1:joIR5PNLM2EFqqESUjCMGXrWmXNHEU9CEiK813oKYS4=
-github.com/go-resty/resty/v2 v2.6.0/go.mod h1:PwvJS6hvaPkjtjNg9ph+VrSD92bi5Zq73w/BIH7cC3Q=
 github.com/go-sql-driver/mysql v1.4.0/go.mod h1:zAC/RDZ24gD3HViQzih4MyKcchzm+sOG5ZlKdlhCg5w=
 github.com/go-sql-driver/mysql v1.4.1/go.mod h1:zAC/RDZ24gD3HViQzih4MyKcchzm+sOG5ZlKdlhCg5w=
 github.com/go-sql-driver/mysql v1.5.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=
@@ -1224,6 +1243,7 @@ golang.org/x/sys v0.0.0-20210510120138-977fb7262007/go.mod h1:oPkhp1MJrh7nUepCBc
 golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20210819072135-bce67f096156 h1:f7XLk/QXGE6IM4HjJ4ttFFlPSwJ65A1apfDd+mmViR0=
 golang.org/x/sys v0.0.0-20210819072135-bce67f096156/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.0.0-20220110181412-a018aaa089fe/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.0.0-20201117132131-f5c789dd3221/go.mod h1:Nr5EML6q2oocZ2LXRh80K7BxOlk5/8JxuGnuhpl+muw=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=

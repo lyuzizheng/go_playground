@@ -1,45 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"code.byted.org/lyuzizheng/playground/error_test"
+)
 
 func main() {
 
-	a := make([]int, 0, 10)
-	a = append(a, 1)
-	fmt.Println(a)
-	fmt.Println(len(a))
-	fmt.Println(a[0:2])
-
-	//fmt.Println(daily_contest.DetectCapitalUse("USA"))
-	//fmt.Println(daily_contest.DetectCapitalUse("sdasfage"))
-	//fmt.Println(daily_contest.DetectCapitalUse("WEvdvdva"))
-	//fmt.Println(daily_contest.DetectCapitalUse("Kvevubaivs"))
-
-	//runtime.GOMAXPROCS(10)
-
-	//var yes int
-	//var no int
-	////json.UnmarshallFromInterfacrand")
-	//rand.Seed(time.Now().UnixNano())
-	//for i := 0; i < 100000; i++ {
-	//	a := rand.Int63() & 0xFFF
-	//	if a < 1024 {
-	//		yes++
-	//	} else {
-	//		no++
-	//	}
-	//}
-	//fmt.Println(yes)
-	//fmt.Println(no)
-	//
-	//stringA := `{name: zizheng}`
-	//
-	//var man Man
-	//json.Unmarshal([]byte(stringA), &man)
-	//
-	//fmt.Println(nil == man.body)
-
-	//http.TestDataCloudQps()
+	error_test.TestingError()
 
 	//array.ArrayCopy()
 	//interfaces.PointerNilTry()
@@ -124,6 +91,3 @@ func main() {
 	//fmt.Printf("a: %p, b: %p\n", &a[1023], &b[0])
 
 }
-
-
-

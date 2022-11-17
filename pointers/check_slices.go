@@ -1,3 +1,6 @@
+//go:build unittest
+// +build unittest
+
 package pointers
 
 import (
@@ -5,7 +8,6 @@ import (
 	"fmt"
 	"reflect"
 )
-
 
 //go:noinline
 func UpdateSlice(s []int) {
@@ -17,8 +19,7 @@ func UpdateSlice(s []int) {
 	fmt.Printf("AfterUpdate: %v\n", s)
 }
 
-
-func CheckSlice(){
+func CheckSlice() {
 	var s []int
 	utils.DumpObject("NewSlice", reflect.ValueOf(&s))
 	fmt.Printf("NewSlice: %v\n", s)

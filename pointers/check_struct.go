@@ -1,3 +1,6 @@
+//go:build unittest
+// +build unittest
+
 package pointers
 
 import (
@@ -14,7 +17,7 @@ func UpdateStruct(s MyStruct) {
 	s.A = 5
 }
 
-func NewStruct(){
+func NewStruct() {
 	var s = MyStruct{
 		A: 0,
 		B: "0",
@@ -24,16 +27,6 @@ func NewStruct(){
 	UpdateStruct(s)
 	fmt.Printf("UpdatedStruct: %v\n", s)
 }
-
-
-
-
-
-
-
-
-
-
 
 //func NewStruct(){
 //	var s = MyStruct{
