@@ -1,51 +1,27 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
-	s1 := make([]int, 3, 6)
-	fmt.Println(s1)
-	s2 := s1
-	fmt.Println(s2)
-	s1 = append(s1, 7)
-	fmt.Println(s1)
-	updateSlice(s2)
-	fmt.Println(s2)
-	fmt.Println(s1)
+	//interface_test.PointerNilTry()
+	//interface_test.Verify()
+	//interface_test.Tutorial()
 
-	//array.ArrayCopy()
-	//interfaces.PointerNilTry()
-	//interfaces.Verify()
-	//interfaces.Tutorial()
-	//channel.ChannelTest1()   //C
-	//system.ChangeTime()
-
-	//interfaces.EmptyStructPointers()
-	//algo.RunGame()
-	//uid := int64(6691213328788014082)
-	//
-	//fmt.Println(uid)
-	//
-	//remainder := uid & 0xFFF
-	//
-	//fmt.Println(remainder)
-
-	//context.TestContextCancel()
-	//interfaces.InterfaceCompare()
-
-	//json.UnmarshallToInterface()
+	//jsonPlay.UnmarshallToInterface()
 	//types.TypeCasting()
-	//json.JsonEncode()
+	//jsonPlay.JsonEncode()
 
 	//pointers.PointerDemo()
 
-	//interfaces.CheckSliceSimple()
+	//interface_test.CheckSliceSimple()
 
-	//var s interfaces{}
+	//var s interface{}
 	//fmt.Println(unsafe.Sizeof(s))
 
-	//utils.DumpObject("interfaces", reflect.ValueOf(&s))
+	//utils.DumpObject("interface", reflect.ValueOf(&s))
 
 	//var testStruct InterfaceA
 
@@ -98,6 +74,36 @@ func main() {
 
 }
 
-func updateSlice(s1 []int) {
-	s1 = append(s1, 5, 5, 5, 5, 5)
+type InterfaceA interface {
+	PrintStatus() InterfaceA
+	ChangeStatus() InterfaceA
+}
+
+type A struct {
+	Status string
+}
+
+func (a *A) ChangeStatus() InterfaceA {
+	a.Status = "down"
+	return a
+}
+
+func (a *A) PrintStatus() InterfaceA {
+	fmt.Printf("Status A is %s\n", a.Status)
+	return a
+}
+
+type TestStruct struct {
+	*A
+}
+
+func (t *TestStruct) ChangeStatus() InterfaceA {
+	t.Status = "up"
+	return t
+}
+
+func (t *TestStruct) PrintStatus() InterfaceA {
+	t.A.PrintStatus()
+	//fmt.Printf("Status T is %s\n", t.Status)
+	return t
 }
