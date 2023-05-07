@@ -1,21 +1,14 @@
 package main
 
 import (
-	"code.byted.org/im_cloud/playground/interface_test"
-
-
-
 	"fmt"
 )
 
 func main() {
 
-
 	//interface_test.PointerNilTry()
 	//interface_test.Verify()
-	interface_test.Tutorial()
-
-
+	//interface_test.Tutorial()
 
 	//jsonPlay.UnmarshallToInterface()
 	//types.TypeCasting()
@@ -73,8 +66,6 @@ func main() {
 	//fmt.Println(unsafe.Sizeof(S2{}))
 	//fmt.Println(unsafe.Sizeof(S3{}))
 
-
-
 	//a := make([]int8, 1024)
 	//b := make([]int8, 1024)
 	//fmt.Printf("a: %p, b: %p\n", a, b)
@@ -83,14 +74,12 @@ func main() {
 
 }
 
-
 type InterfaceA interface {
 	PrintStatus() InterfaceA
 	ChangeStatus() InterfaceA
 }
 
-
-type A struct{
+type A struct {
 	Status string
 }
 
@@ -104,17 +93,16 @@ func (a *A) PrintStatus() InterfaceA {
 	return a
 }
 
-
 type TestStruct struct {
 	*A
 }
 
-func (t *TestStruct) ChangeStatus() InterfaceA{
+func (t *TestStruct) ChangeStatus() InterfaceA {
 	t.Status = "up"
 	return t
 }
 
-func (t *TestStruct) PrintStatus() InterfaceA{
+func (t *TestStruct) PrintStatus() InterfaceA {
 	t.A.PrintStatus()
 	//fmt.Printf("Status T is %s\n", t.Status)
 	return t

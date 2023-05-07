@@ -51,6 +51,8 @@ code.byted.org/gopkg/facility v1.0.12/go.mod h1:1iI9jtPDcYBazxwQf9OVGcKZSDr04zW1
 code.byted.org/gopkg/gopool v0.13.0/go.mod h1:1S17gaBR2gpor3NjAO+mzZrCqbI1P4AxyLPJ/XYCWMg=
 code.byted.org/gopkg/gopool v0.13.1 h1:lrLEDvSk7rG1fusqYgjgxmIGFeikkNQryhUPobZ1uYc=
 code.byted.org/gopkg/gopool v0.13.1/go.mod h1:dJOSNBfyY8VWGmH1jBlpYQj6a9y9qhfqeCY9NihuC78=
+code.byted.org/gopkg/lang v0.21.8 h1:k6HjBdfsNyzR1Ba0i3n7nURs4s91TmcVGeiVqo7c6j4=
+code.byted.org/gopkg/lang v0.21.8/go.mod h1:4MAxdfQbkGnNy59M3sWfjIQvjf9ZoL5OyFfPZLv9y1M=
 code.byted.org/gopkg/logid v0.0.0-20200327113313-9c05366f32f9/go.mod h1:xgS4+w2XMCTaJ3FZv8dm2QWrf39stETELCwonPG/oho=
 code.byted.org/gopkg/logid v0.0.0-20200825073124-b8a1653a3619 h1:G3KA+Ov9IHwCGu29WfqDSr7ZcnlVFmHZm103alo9ZIg=
 code.byted.org/gopkg/logid v0.0.0-20200825073124-b8a1653a3619/go.mod h1:PlTsrFFA4NzfjeZYoqmnXSR65nxnx0lBeNLTZy+WdKU=
