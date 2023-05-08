@@ -1,10 +1,13 @@
 package main
 
 import (
+	"code.byted.org/im_cloud/playground/jsonx"
 	"fmt"
 )
 
 func main() {
+
+	jsonx.TryJson()
 
 	//interface_test.PointerNilTry()
 	//interface_test.Verify()
