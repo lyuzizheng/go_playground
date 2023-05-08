@@ -12,6 +12,7 @@ require (
 )
 
 require (
+	code.byted.org/aweme-go/hstruct v0.1.0 // indirect
 	code.byted.org/bytedtrace/bytedtrace-client-go v1.0.21 // indirect
 	code.byted.org/bytedtrace/bytedtrace-common/go v0.0.8 // indirect
 	code.byted.org/bytedtrace/bytedtrace-compatible-client-go v0.0.12 // indirect
@@ -26,6 +27,7 @@ require (
 	code.byted.org/gopkg/etcd_util v2.3.2+incompatible // indirect
 	code.byted.org/gopkg/etcdproxy v0.1.1 // indirect
 	code.byted.org/gopkg/gopool v0.13.1 // indirect
+	code.byted.org/gopkg/jsonx v0.3.3 // indirect
 	code.byted.org/gopkg/lang v0.21.8 // indirect
 	code.byted.org/gopkg/logid v0.0.0-20200825073124-b8a1653a3619 // indirect
 	code.byted.org/gopkg/metainfo v0.0.11 // indirect
@@ -61,6 +63,9 @@ require (
 	github.com/opentracing/opentracing-go v1.2.1-0.20210205174328-3088eee7e4d2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/shirou/gopsutil v3.20.12+incompatible // indirect
+	github.com/tidwall/gjson v1.6.3 // indirect
+	github.com/tidwall/match v1.0.1 // indirect
+	github.com/tidwall/pretty v1.0.2 // indirect
 	golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9 // indirect
 	golang.org/x/sys v0.0.0-20210119212857-b64e53b001e4 // indirect
 	golang.org/x/text v0.3.5 // indirect
