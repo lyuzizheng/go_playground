@@ -1,5 +1,5 @@
-//go:build unittest
-// +build unittest
+//go:build exclude
+// +build exclude
 
 package pointers
 

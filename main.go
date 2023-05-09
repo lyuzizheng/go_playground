@@ -1,12 +1,18 @@
 package main
 
-import (
-	"code.byted.org/lyuzizheng/playground/error_test"
-)
+import "fmt"
 
 func main() {
 
-	error_test.TestingError()
+	s1 := make([]int, 3, 6)
+	fmt.Println(s1)
+	s2 := s1
+	fmt.Println(s2)
+	s1 = append(s1, 7)
+	fmt.Println(s1)
+	updateSlice(s2)
+	fmt.Println(s2)
+	fmt.Println(s1)
 
 	//array.ArrayCopy()
 	//interfaces.PointerNilTry()
@@ -90,4 +96,8 @@ func main() {
 	//fmt.Printf("a: %p, b: %p\n", &a[0], &a[1])
 	//fmt.Printf("a: %p, b: %p\n", &a[1023], &b[0])
 
+}
+
+func updateSlice(s1 []int) {
+	s1 = append(s1, 5, 5, 5, 5, 5)
 }
