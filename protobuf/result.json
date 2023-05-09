@@ -1,0 +1,97 @@
+{
+  "image_card": {
+    "title": {
+      "image": {
+        "url_list": [
+          "https://sf16-sg.tiktokcdn.com/obj/eden-sg/banupfubf/now_share.png"
+        ]
+      },
+      "title": {
+        "text": "now_feature_invite_onelink_cash_message"
+      },
+      "subtitle": {
+        "text": "now_feature_invite_onelink_cash_message_code"
+      }
+    },
+    "link_info": {
+      "url_list": [
+        "snssdk1233://now/feed?invite_code=QWEASD"
+      ],
+      "action_type": 0
+    },
+    "preview_hint": {
+      "sender_preview_text": {
+        "text": "now_feature_dm_inviter_sent_invite"
+      },
+      "receiver_preview_text": {
+        "text": "now_feature_dm_friend_received_invite"
+      },
+      "quote_preview_text": {
+        "text": "now_feature_invite_onelink_cash_message_quoted"
+      }
+    },
+    "req_base": {
+      "query_data": {
+        "resource_id": "7145014092050400258",
+        "extra": {
+          "quote_preview": "now_feature_invite_onelink_cash_message_quoted",
+          "receiver_preview": "now_feature_dm_friend_received_invite",
+          "sender_preview": "now_feature_dm_inviter_sent_invite",
+          "subtitle": "now_feature_invite_onelink_cash_message_code",
+          "subtitle_args": "[\"#YWUHEJKSKJ\"]",
+          "title": "now_feature_invite_onelink_cash_message",
+          "title_args": "[\"$\",\"5\"]"
+        }
+      }
+    }
+  }
+}
+
+{
+  "image_card": {
+    "title": {
+      "image": {
+        "url_list": [
+          "https://sf16-sg.tiktokcdn.com/obj/eden-sg/banupfubf/now_share.png"
+        ]
+      },
+      "title": {
+        "text": "now_feature_invite_onelink_cash_message"
+      },
+      "subtitle": {
+        "text": "now_feature_invite_onelink_cash_message_code"
+      }
+    },
+    "link_info": {
+      "url_list": [
+        "snssdk1233://now/feed?invite_code=QWEASD"
+      ],
+      "action_type": 0
+    },
+    "preview_hint": {
+      "sender_preview_text": {
+        "text": "now_feature_dm_inviter_sent_invite"
+      },
+      "receiver_preview_text": {
+        "text": "now_feature_dm_friend_received_invite"
+      },
+      "quote_preview_text": {
+        "text": "now_feature_invite_onelink_cash_message_quoted"
+      }
+    },
+    "req_base": {
+      "query_data": {
+        "resource_id": "7143161431235642369",
+        "extra": {
+          "quote_preview": "now_feature_invite_onelink_cash_message_quoted",
+          "receiver_preview": "now_feature_dm_friend_received_invite",
+          "sender_preview": "now_feature_dm_inviter_sent_invite",
+          "subtitle": "now_feature_invite_onelink_cash_message_code",
+          "subtitle_args": "[\"#YWUHEJKSKJ\"]",
+          "title": "now_feature_invite_onelink_cash_message",
+          "title_args": "[\"$\",\"5\"]"
+        }
+      }
+    }
+  }
+}

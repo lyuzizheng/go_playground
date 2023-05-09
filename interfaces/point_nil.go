@@ -1,11 +1,9 @@
-package interface_test
+package interfaces
 
 import (
 	"fmt"
 	"unsafe"
 )
-
-
 
 type Animal interface {
 	Walk()
@@ -13,15 +11,16 @@ type Animal interface {
 type Dog struct {
 	name string
 }
+
 func (d Dog) Walk() {
 	fmt.Printf("%s is walking \n", d.name)
 }
 
-func PointerNilTry()  {
+func PointerNilTry() {
 	var dog *Dog
 	//Test Nils
 	nilPointerTest(dog)
-	if dog == nil{
+	if dog == nil {
 		fmt.Println("0")
 	} else {
 		fmt.Println("1")
@@ -30,35 +29,30 @@ func PointerNilTry()  {
 	//dog = &Dog{}
 	//Test Nils
 	nilPointerTest(dog)
-	if dog == nil{
+	if dog == nil {
 		fmt.Println("0")
 	} else {
 		fmt.Println("1")
 	}
 }
 
-func nilPointerTest(animal Animal){
-	if animal == nil{
+func nilPointerTest(animal Animal) {
+	if animal == nil {
 		fmt.Println("0")
 	} else {
 		fmt.Println("1")
 	}
 }
 
+func NinInterfaceTest() {
 
+	var a Animal
 
+	a.Walk()
 
+}
 
-
-
-
-
-
-
-
-
-
-func Verify(){
+func Verify() {
 
 	var a Animal
 	fmt.Println(a == nil)
@@ -70,7 +64,6 @@ func Verify(){
 	fmt.Printf("a: %T, %v\n", a, a)
 
 }
-
 
 type iface struct {
 	itab, data uintptr

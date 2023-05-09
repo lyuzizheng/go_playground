@@ -1,4 +1,4 @@
-package jsonPlay
+package json
 
 import (
 	"encoding/json"
@@ -12,17 +12,18 @@ type Card interface {
 }
 
 type CardTemplate1 struct {
-	OpenId     string `jsonPlay:"open_id,omitempty"`
-	UserId     string `jsonPlay:"user_id,omitempty"`
-	OpenChatId string `jsonPlay:"open_chat_id"`
+	OpenId     string `json:"open_id,omitempty"`
+	UserId     string `json:"user_id,omitempty"`
+	OpenChatId string `json:"open_chat_id"`
 
 	//Compulsory
-	Title      string               `jsonPlay:"title"`
-	TitleColor string `jsonPlay:"title_color"`
+	Title      string               `json:"title"`
+	TitleColor string `json:"title_color"`
 	//Compulsory
-	Message string `jsonPlay:"message"`
+	Message string `json:"message"`
 	//Compulsory
-	FootNote string              `jsonPlay:"foot_note"`
+	FootNote string              `json:"foot_note"`
+	Extra  []string `json:"extra"`
 }
 
 func (c CardTemplate1) ToCard(defaultOpenChatID string) interface{} {
@@ -32,12 +33,12 @@ func (c CardTemplate1) ToCard(defaultOpenChatID string) interface{} {
 }
 
 type CardTemplateDefault struct {
-	OpenId     string `jsonPlay:"open_id,omitempty"`
-	UserId     string `jsonPlay:"user_id,omitempty"`
-	OpenChatId string `jsonPlay:"open_chat_id"`
+	OpenId     string `json:"open_id,omitempty"`
+	UserId     string `json:"user_id,omitempty"`
+	OpenChatId string `json:"open_chat_id"`
 
 	//Compulsory
-	Message string `jsonPlay:"message"`
+	Message string `json:"message"`
 	//Compulsory
 
 }
@@ -61,12 +62,13 @@ func UnmarshallFromInterface(templateID string){
 		cardNew := CardTemplate1{}
 		err = json.Unmarshal([]byte(rawCard), &cardNew)
 		card = cardNew
+		fmt.Println(len(cardNew.Extra))
 	default:
 		cardNew := CardTemplateDefault{}
 		err = json.Unmarshal([]byte(rawCard), &cardNew)
 		card = cardNew
 	}
-	//err = jsonPlay.Unmarshal([]byte(rawCard), &card)
+	//err = json.Unmarshal([]byte(rawCard), &card)
 	if err != nil {
 		fmt.Printf("Error: %s", err.Error())
 	} else {
@@ -82,16 +84,16 @@ func UnmarshallToInterface()  {
 	test3 := "{ \"integer\" : 234, \"booltest\" : true}"
 
 
-	//var result interface{}
-	//err := jsonPlay.Unmarshal([]byte(test1), &result)
+	//var result interfaces{}
+	//err := json.Unmarshal([]byte(test1), &result)
 	//if err != nil {
 	//	fmt.Printf("Error: %s", err.Error())
 	//} else {
 	//	fmt.Printf("Struct: %+v", result)
 	//	fmt.Printf("type is %s", reflect.TypeOf(result))
 	//}
-	//var result2 interface{}
-	//err2 := jsonPlay.Unmarshal([]byte(test2), &result2)
+	//var result2 interfaces{}
+	//err2 := json.Unmarshal([]byte(test2), &result2)
 	//if err2 != nil {
 	//	fmt.Printf("Error: %s", err2.Error())
 	//} else {
