@@ -1,13 +1,13 @@
 package main
 
 import (
-	"code.byted.org/lyuzizheng/playground/sug_reply"
+	"code.byted.org/im_cloud/playground/jsonx"
 	"fmt"
 )
 
 func main() {
 
-	sug_reply.SugReply()
+	jsonx.TryJson()
 
 	//interface_test.PointerNilTry()
 	//interface_test.Verify()
