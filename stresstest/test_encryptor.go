@@ -57,7 +57,6 @@ func DoZlibCompressOld(src []byte) []byte {
 	if error != nil {
 		return nil
 	}
-
 	return in.Bytes()
 }
 
@@ -97,22 +96,22 @@ var (
 	}
 )
 
-func DoZlibCompress2Pool(data []byte) ([]byte, error) {
+func DoZlibCompress2Pool(data []byte) []byte {
 	buf := bufferPool2.Get().(*bytes.Buffer)
 	buf.Reset()
 	writer := writerPool2.Get().(*zlib.Writer)
 	writer.Reset(buf)
 	_, err := writer.Write(data)
 	if err != nil {
-		return nil, err
+		return nil
 	}
 	err = writer.Close()
 	if err != nil {
-		return nil, err
+		return nil
 	}
 	writer.Reset(nil) // Reset the writer state before returning it to the pool
 	writerPool.Put(writer)
 	compressedData := buf.Bytes()
 	bufferPool2.Put(buf)
-	return compressedData, nil
+	return compressedData
 }

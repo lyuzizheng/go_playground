@@ -40,7 +40,6 @@ func getInput() []byte {
 //			defer wg.Done()
 //			DoZlibCompressBufferPool(getInput())
 //		}()
-//
 //	}
 //	wg.Wait()
 //}
@@ -93,7 +92,6 @@ func BenchmarkDoZlibCompressP(b *testing.B) {
 	b.ResetTimer()
 	b.RunParallel(func(pb *testing.PB) {
 		for pb.Next() {
-
 			DoZlibCompressBufferPool(getInput())
 		}
 
@@ -103,7 +101,6 @@ func BenchmarkDoZlibCompressP(b *testing.B) {
 func BenchmarkDoZlibCompressOldP(b *testing.B) {
 	b.ResetTimer()
 	b.RunParallel(func(pb *testing.PB) {
-
 		for pb.Next() {
 			DoZlibCompressOld(getInput())
 		}

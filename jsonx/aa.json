@@ -1,0 +1,785 @@
+{
+  "10002": [
+    {
+      "reply_emoji": "😅",
+      "reply_text": "I can't",
+      "starling_key": "dm_suggestreply_cant"
+    },
+    {
+      "reply_emoji": "😂",
+      "reply_text": "Made my day",
+      "starling_key": "dm_suggestreply_made_my_day2"
+    },
+    {
+      "reply_emoji": "🤣",
+      "reply_text": "I'm screaming",
+      "starling_key": "dm_suggestreply_im_screaming"
+    },
+    {
+      "reply_emoji": "😹",
+      "reply_text": "Epic fail",
+      "starling_key": "dm_suggestreply_epic_fail"
+    },
+    {
+      "reply_emoji": "😆",
+      "reply_text": "Wheezing!",
+      "starling_key": "dm_suggestreply_wheezing"
+    }
+  ],
+  "10006": [
+    {
+      "reply_emoji": "😲",
+      "reply_text": "I can't believe it",
+      "starling_key": "dm_suggestreply_cant_believe_it"
+    },
+    {
+      "reply_emoji": "🤔",
+      "reply_text": "Mind-boggling...",
+      "starling_key": "dm_suggestreply_mind_boggling"
+    },
+    {
+      "reply_emoji": "😮",
+      "reply_text": "No way!",
+      "starling_key": "dm_suggestreply_no_way2"
+    },
+    {
+      "reply_emoji": "🤯",
+      "reply_text": "Unreal!",
+      "starling_key": "dm_suggestreply_unreal2"
+    },
+    {
+      "reply_emoji": "😱",
+      "reply_text": "I'm shook",
+      "starling_key": "dm_suggestreply_im_shook"
+    }
+  ],
+  "10015": [
+    {
+      "reply_emoji": "👨‍🎓",
+      "reply_text": "Brings back memories",
+      "starling_key": "dm_suggestreply_brings_back_memories"
+    },
+    {
+      "reply_emoji": "👀",
+      "reply_text": "Wait a sec",
+      "starling_key": "dm_suggestreply_wait_a_sec"
+    },
+    {
+      "reply_emoji": "😂",
+      "reply_text": "LOL",
+      "starling_key": "dm_suggestreply_lol"
+    },
+    {
+      "reply_emoji": "✅",
+      "reply_text": "Vibe check",
+      "starling_key": "dm_suggestreply_vibe_check"
+    },
+    {
+      "reply_emoji": "😮",
+      "reply_text": "Whoa!",
+      "starling_key": "dm_suggestreply_whoa"
+    }
+  ],
+  "10019": [
+    {
+      "reply_emoji": "😲",
+      "reply_text": "OMG!",
+      "starling_key": "dm_suggestreply_omg2"
+    },
+    {
+      "reply_emoji": "🥰",
+      "reply_text": "So cute!",
+      "starling_key": "dm_suggestreply_so_cute"
+    },
+    {
+      "reply_emoji": "😍",
+      "reply_text": "I want one",
+      "starling_key": "dm_suggestreply_i_want_one"
+    },
+    {
+      "reply_emoji": "🙀",
+      "reply_text": "I can't believe it!",
+      "starling_key": "dm_suggestreply_i_cant_believe_it"
+    },
+    {
+      "reply_emoji": "😢",
+      "reply_text": "Sadness",
+      "starling_key": "dm_suggestreply_sadness"
+    }
+  ],
+  "10026": [
+    {
+      "reply_emoji": "💋",
+      "reply_text": "Gorgeous look",
+      "starling_key": "dm_suggestreply_gorgeous_look"
+    },
+    {
+      "reply_emoji": "😩",
+      "reply_text": "I need!",
+      "starling_key": "dm_suggestreply_i_need2"
+    },
+    {
+      "reply_emoji": "🛍️",
+      "reply_text": "I must have it",
+      "starling_key": "dm_suggestreply_i_must_have_it"
+    },
+    {
+      "reply_emoji": "🌸",
+      "reply_text": "Lovely colors",
+      "starling_key": "dm_suggestreply_lovely_colors"
+    },
+    {
+      "reply_emoji": "🙏",
+      "reply_text": "Thanks for sharing",
+      "starling_key": "dm_suggestreply_thanks_for_sharing"
+    }
+  ],
+  "10028": [
+    {
+      "reply_emoji": "😍",
+      "reply_text": "Cute",
+      "starling_key": "dm_suggestreply_cute"
+    },
+    {
+      "reply_emoji": "🎨",
+      "reply_text": "So creative",
+      "starling_key": "dm_suggestreply_so_creative1"
+    },
+    {
+      "reply_emoji": "🤝",
+      "reply_text": "Saving this!",
+      "starling_key": "dm_suggestreply_saving_this1"
+    },
+    {
+      "reply_emoji": "🌟",
+      "reply_text": "Beautiful",
+      "starling_key": "dm_suggestreply_beautiful"
+    },
+    {
+      "reply_emoji": "💅",
+      "reply_text": "Stunning!",
+      "starling_key": "dm_suggestreply_stunning1"
+    }
+  ],
+  "10037": [
+    {
+      "reply_emoji": "🤤",
+      "reply_text": "So satisfying!",
+      "starling_key": "dm_suggestreply_so_satisfying"
+    },
+    {
+      "reply_emoji": "💯",
+      "reply_text": "This is great",
+      "starling_key": "dm_suggestreply_this_is_great"
+    },
+    {
+      "reply_emoji": "😮",
+      "reply_text": "There's no way",
+      "starling_key": "dm_suggestreply_theres_no_way"
+    },
+    {
+      "reply_emoji": "🌀",
+      "reply_text": "Mesmerizing",
+      "starling_key": "dm_suggestreply_mesmerizing"
+    },
+    {
+      "reply_emoji": "🤔",
+      "reply_text": "Mind-boggling...",
+      "starling_key": "dm_suggestreply_mind_boggling"
+    }
+  ],
+  "10039": [
+    {
+      "reply_emoji": "😋",
+      "reply_text": "Yums",
+      "starling_key": "dm_suggestreply_yums"
+    },
+    {
+      "reply_emoji": "😍",
+      "reply_text": "Looks tasty!",
+      "starling_key": "dm_suggestreply_looks_tasty"
+    },
+    {
+      "reply_emoji": "😋",
+      "reply_text": "I need!",
+      "starling_key": "dm_suggestreply_i_need"
+    },
+    {
+      "reply_emoji": "🤤",
+      "reply_text": "Drooling",
+      "starling_key": "dm_suggestreply_drooling"
+    },
+    {
+      "reply_emoji": "🤯",
+      "reply_text": "Unreal!",
+      "starling_key": "dm_suggestreply_unreal2"
+    }
+  ],
+  "10040": [
+    {
+      "reply_emoji": "😋",
+      "reply_text": "Yums",
+      "starling_key": "dm_suggestreply_yums"
+    },
+    {
+      "reply_emoji": "😍",
+      "reply_text": "Looks tasty!",
+      "starling_key": "dm_suggestreply_looks_tasty"
+    },
+    {
+      "reply_emoji": "😋",
+      "reply_text": "I need",
+      "starling_key": "dm_suggestreply_i_need1"
+    },
+    {
+      "reply_emoji": "🤤",
+      "reply_text": "Drooling",
+      "starling_key": "dm_suggestreply_drooling"
+    },
+    {
+      "reply_emoji": "🤯",
+      "reply_text": "Unreal!",
+      "starling_key": "dm_suggestreply_unreal2"
+    }
+  ],
+  "10045": [
+    {
+      "reply_emoji": "😂",
+      "reply_text": "HAHA",
+      "starling_key": "dm_suggestreply_haha"
+    },
+    {
+      "reply_emoji": "😲",
+      "reply_text": "OMG!",
+      "starling_key": "dm_suggestreply_omg2"
+    },
+    {
+      "reply_emoji": "❤️",
+      "reply_text": "Love this",
+      "starling_key": "dm_suggestreply_love_this"
+    },
+    {
+      "reply_emoji": "💯",
+      "reply_text": "Too good!",
+      "starling_key": "dm_suggestreply_too_good1"
+    },
+    {
+      "reply_emoji": "🙏",
+      "reply_text": "Thanks for sharing",
+      "starling_key": "dm_suggestreply_thanks_for_sharing"
+    }
+  ],
+  "10047": [
+    {
+      "reply_emoji": "👏",
+      "reply_text": "So talented!",
+      "starling_key": "dm_suggestreply_so_talented"
+    },
+    {
+      "reply_emoji": "❤️",
+      "reply_text": "Love this",
+      "starling_key": "dm_suggestreply_love_this"
+    },
+    {
+      "reply_emoji": "😮",
+      "reply_text": "Whoa!",
+      "starling_key": "dm_suggestreply_whoa"
+    },
+    {
+      "reply_emoji": "🙏",
+      "reply_text": "Thanks for sharing",
+      "starling_key": "dm_suggestreply_thanks_for_sharing"
+    },
+    {
+      "reply_emoji": "❤️",
+      "reply_text": "Love this",
+      "starling_key": "dm_suggestreply_love_this"
+    }
+  ],
+  "10051": [
+    {
+      "reply_emoji": "🥳",
+      "reply_text": "Mood",
+      "starling_key": "dm_suggestreply_mood"
+    },
+    {
+      "reply_emoji": "❤️",
+      "reply_text": "Love this!",
+      "starling_key": "dm_suggestreply_love_this2"
+    },
+    {
+      "reply_emoji": "😲",
+      "reply_text": "The outfits",
+      "starling_key": "dm_suggestreply_the_outfits"
+    },
+    {
+      "reply_emoji": "😍",
+      "reply_text": "Love the look!",
+      "starling_key": "dm_suggestreply_love_the_look"
+    },
+    {
+      "reply_emoji": "😊",
+      "reply_text": "Slay",
+      "starling_key": "dm_suggestreply_slay"
+    }
+  ],
+  "10052": [
+    {
+      "reply_emoji": "💯",
+      "reply_text": "Too good!",
+      "starling_key": "dm_suggestreply_too_good1"
+    },
+    {
+      "reply_emoji": "😍",
+      "reply_text": "Love the look!",
+      "starling_key": "dm_suggestreply_love_the_look"
+    },
+    {
+      "reply_emoji": "❤️",
+      "reply_text": "Love this",
+      "starling_key": "dm_suggestreply_love_this"
+    },
+    {
+      "reply_emoji": "😮",
+      "reply_text": "So creative",
+      "starling_key": "dm_suggestreply_so_creative2"
+    },
+    {
+      "reply_emoji": "😂",
+      "reply_text": "LOL",
+      "starling_key": "dm_suggestreply_lol"
+    }
+  ],
+  "10056": [
+    {
+      "reply_emoji": "🎮",
+      "reply_text": "Love this game",
+      "starling_key": "dm_suggestreply_love_this_game"
+    },
+    {
+      "reply_emoji": "💯",
+      "reply_text": "Looks so cool",
+      "starling_key": "dm_suggestreply_looks_so_cool"
+    },
+    {
+      "reply_emoji": "😮",
+      "reply_text": "I want!",
+      "starling_key": "dm_suggestreply_i_want3"
+    },
+    {
+      "reply_emoji": "🙏",
+      "reply_text": "Thanks for sharing",
+      "starling_key": "dm_suggestreply_thanks_for_sharing"
+    },
+    {
+      "reply_emoji": "😮",
+      "reply_text": "Whoa!",
+      "starling_key": "dm_suggestreply_whoa"
+    }
+  ],
+  "10057": [
+    {
+      "reply_emoji": "😎",
+      "reply_text": "So cool",
+      "starling_key": "dm_suggestreply_so_cool2"
+    },
+    {
+      "reply_emoji": "🤩",
+      "reply_text": "I want to try!",
+      "starling_key": "dm_suggestreply_i_want_to_try"
+    },
+    {
+      "reply_emoji": "😂",
+      "reply_text": "LOL",
+      "starling_key": "dm_suggestreply_lol"
+    },
+    {
+      "reply_emoji": "🙏",
+      "reply_text": "Thanks for sharing",
+      "starling_key": "dm_suggestreply_thanks_for_sharing"
+    },
+    {
+      "reply_emoji": "💯",
+      "reply_text": "Looks great",
+      "starling_key": "dm_suggestreply_looks_great1"
+    }
+  ],
+  "10064": [
+    {
+      "reply_emoji": "🤠",
+      "reply_text": "That's wild",
+      "starling_key": "dm_suggestreply_thats_wild"
+    },
+    {
+      "reply_emoji": "👍",
+      "reply_text": "I'm down",
+      "starling_key": "dm_suggestreply_im_down"
+    },
+    {
+      "reply_emoji": "😎",
+      "reply_text": "So cool",
+      "starling_key": "dm_suggestreply_so_cool2"
+    },
+    {
+      "reply_emoji": "❤️",
+      "reply_text": "Love this",
+      "starling_key": "dm_suggestreply_love_this"
+    },
+    {
+      "reply_emoji": "🌲",
+      "reply_text": "Let's go",
+      "starling_key": "dm_suggestreply_lets_go2"
+    }
+  ],
+  "10070": [
+    {
+      "reply_emoji": "😂",
+      "reply_text": "HAHA",
+      "starling_key": "dm_suggestreply_haha"
+    },
+    {
+      "reply_emoji": "🤔",
+      "reply_text": "Interesting",
+      "starling_key": "dm_suggestreply_interesting"
+    },
+    {
+      "reply_emoji": "🤯",
+      "reply_text": "Mindblown!",
+      "starling_key": "dm_suggestreply_mindblown"
+    },
+    {
+      "reply_emoji": "😱",
+      "reply_text": "That's impressive",
+      "starling_key": "dm_suggestreply_thats_impressive"
+    },
+    {
+      "reply_emoji": "🙃",
+      "reply_text": "Same",
+      "starling_key": "dm_suggestreply_same"
+    }
+  ],
+  "10080": [
+    {
+      "reply_emoji": "✅",
+      "reply_text": "Vibe check",
+      "starling_key": "dm_suggestreply_vibe_check"
+    },
+    {
+      "reply_emoji": "👏",
+      "reply_text": "Wow!",
+      "starling_key": "dm_suggestreply_wow2"
+    },
+    {
+      "reply_emoji": "🤯",
+      "reply_text": "Mind-blowing!",
+      "starling_key": "dm_suggestreply_mind_blowing"
+    },
+    {
+      "reply_emoji": "🔍",
+      "reply_text": "So detailed",
+      "starling_key": "dm_suggestreply_so_detailed"
+    },
+    {
+      "reply_emoji": "😳",
+      "reply_text": "No way!",
+      "starling_key": "dm_suggestreply_no_way"
+    }
+  ],
+  "10082": [
+    {
+      "reply_emoji": "🙏",
+      "reply_text": "Thanks for sharing",
+      "starling_key": "dm_suggestreply_thanks_for_sharing"
+    },
+    {
+      "reply_emoji": "👑",
+      "reply_text": "Iconic",
+      "starling_key": "dm_suggestreply_iconic"
+    },
+    {
+      "reply_emoji": "📷",
+      "reply_text": "Great shots",
+      "starling_key": "dm_suggestreply_great_shots"
+    },
+    {
+      "reply_emoji": "🤓",
+      "reply_text": "Inspired",
+      "starling_key": "dm_suggestreply_inspired"
+    },
+    {
+      "reply_emoji": "❤️",
+      "reply_text": "Love this",
+      "starling_key": "dm_suggestreply_love_this"
+    }
+  ],
+  "10085": [
+    {
+      "reply_emoji": "😲",
+      "reply_text": "Looks great",
+      "starling_key": "dm_suggestreply_looks_great"
+    },
+    {
+      "reply_emoji": "😍",
+      "reply_text": "I want!",
+      "starling_key": "dm_suggestreply_i_want2"
+    },
+    {
+      "reply_emoji": "✅",
+      "reply_text": "Vibe check",
+      "starling_key": "dm_suggestreply_vibe_check"
+    },
+    {
+      "reply_emoji": "😍",
+      "reply_text": "Looks tasty!",
+      "starling_key": "dm_suggestreply_looks_tasty"
+    },
+    {
+      "reply_emoji": "😋",
+      "reply_text": "Yums",
+      "starling_key": "dm_suggestreply_yums"
+    }
+  ],
+  "10086": [
+    {
+      "reply_emoji": "🌟",
+      "reply_text": "Beautiful",
+      "starling_key": "dm_suggestreply_beautiful"
+    },
+    {
+      "reply_emoji": "💪",
+      "reply_text": "Stay fit",
+      "starling_key": "dm_suggestreply_stay_fit"
+    },
+    {
+      "reply_emoji": "😮",
+      "reply_text": "Whoa!",
+      "starling_key": "dm_suggestreply_whoa"
+    },
+    {
+      "reply_emoji": "🤩",
+      "reply_text": "I wanna go!",
+      "starling_key": "dm_suggestreply_i_wanna_go2"
+    },
+    {
+      "reply_emoji": "😁",
+      "reply_text": "That's awesome",
+      "starling_key": "dm_suggestreply_thats_awesome"
+    }
+  ],
+  "10089": [
+    {
+      "reply_emoji": "😱",
+      "reply_text": "I'm shook",
+      "starling_key": "dm_suggestreply_im_shook"
+    },
+    {
+      "reply_emoji": "😲",
+      "reply_text": "OMG!",
+      "starling_key": "dm_suggestreply_omg2"
+    },
+    {
+      "reply_emoji": "😭",
+      "reply_text": "Are you serious",
+      "starling_key": "dm_suggestreply_are_you_serious1"
+    },
+    {
+      "reply_emoji": "😱",
+      "reply_text": "So scary",
+      "starling_key": "dm_suggestreply_so_scary"
+    },
+    {
+      "reply_emoji": "😳",
+      "reply_text": "No way!",
+      "starling_key": "dm_suggestreply_no_way"
+    }
+  ],
+  "10094": [
+    {
+      "reply_emoji": "🤓",
+      "reply_text": "Fascinating",
+      "starling_key": "dm_suggestreply_fascinating"
+    },
+    {
+      "reply_emoji": "❤️",
+      "reply_text": "Love this",
+      "starling_key": "dm_suggestreply_love_this"
+    },
+    {
+      "reply_emoji": "🙏",
+      "reply_text": "Thanks for sharing",
+      "starling_key": "dm_suggestreply_thanks_for_sharing"
+    },
+    {
+      "reply_emoji": "🤖",
+      "reply_text": "Amazing technology!",
+      "starling_key": "dm_suggestreply_amazing_technology"
+    },
+    {
+      "reply_emoji": "😲",
+      "reply_text": "OMG!",
+      "starling_key": "dm_suggestreply_omg2"
+    }
+  ],
+  "10095": [
+    {
+      "reply_emoji": "😮",
+      "reply_text": "Whoa!",
+      "starling_key": "dm_suggestreply_whoa"
+    },
+    {
+      "reply_emoji": "😩",
+      "reply_text": "I need",
+      "starling_key": "dm_suggestreply_i_need4"
+    },
+    {
+      "reply_emoji": "📱",
+      "reply_text": "Cool app!",
+      "starling_key": "dm_suggestreply_cool_app"
+    },
+    {
+      "reply_emoji": "👍",
+      "reply_text": "So cool",
+      "starling_key": "dm_suggestreply_so_cool5"
+    },
+    {
+      "reply_emoji": "🤯",
+      "reply_text": "This is amazing",
+      "starling_key": "dm_suggestreply_this_is_amazing"
+    }
+  ],
+  "babies": [
+    {
+      "reply_emoji": "😍",
+      "reply_text": "Aww",
+      "starling_key": "dm_suggestreply_aww"
+    },
+    {
+      "reply_emoji": "🥰",
+      "reply_text": "So cute!",
+      "starling_key": "dm_suggestreply_so_cute"
+    },
+    {
+      "reply_emoji": "😂",
+      "reply_text": "LOL",
+      "starling_key": "dm_suggestreply_lol"
+    },
+    {
+      "reply_emoji": "😆",
+      "reply_text": "That's so silly",
+      "starling_key": "dm_suggestreply_thats_so_silly"
+    },
+    {
+      "reply_emoji": "😘",
+      "reply_text": "So adorable!",
+      "starling_key": "dm_suggestreply_so_adorable"
+    }
+  ],
+  "diyhandicrafts": [
+    {
+      "reply_emoji": "🎨",
+      "reply_text": "So creative!",
+      "starling_key": "dm_suggestreply_so_creative"
+    },
+    {
+      "reply_emoji": "🤩",
+      "reply_text": "So cool!",
+      "starling_key": "dm_suggestreply_so_cool"
+    },
+    {
+      "reply_emoji": "😯",
+      "reply_text": "Incredible",
+      "starling_key": "dm_suggestreply_incredible"
+    },
+    {
+      "reply_emoji": "💯",
+      "reply_text": "Perfection",
+      "starling_key": "dm_suggestreply_perfection"
+    },
+    {
+      "reply_emoji": "😍",
+      "reply_text": "I want one",
+      "starling_key": "dm_suggestreply_i_want_one"
+    }
+  ],
+  "pranks": [
+    {
+      "reply_emoji": "😂",
+      "reply_text": "LOL",
+      "starling_key": "dm_suggestreply_lol"
+    },
+    {
+      "reply_emoji": "😆",
+      "reply_text": "Made my day",
+      "starling_key": "dm_suggestreply_made_my_day"
+    },
+    {
+      "reply_emoji": "🤣",
+      "reply_text": "So funny!",
+      "starling_key": "dm_suggestreply_so_funny"
+    },
+    {
+      "reply_emoji": "😅",
+      "reply_text": "Epic prank!",
+      "starling_key": "dm_suggestreply_epic_prank"
+    },
+    {
+      "reply_emoji": "😹",
+      "reply_text": "OMG",
+      "starling_key": "dm_suggestreply_omg"
+    }
+  ],
+  "professionalpersonaldevelopment": [
+    {
+      "reply_emoji": "🙏",
+      "reply_text": "Thanks for sharing",
+      "starling_key": "dm_suggestreply_thanks_for_sharing"
+    },
+    {
+      "reply_emoji": "👍",
+      "reply_text": "So interesting",
+      "starling_key": "dm_suggestreply_so_interesting3"
+    },
+    {
+      "reply_emoji": "💯",
+      "reply_text": "Valuable tips",
+      "starling_key": "dm_suggestreply_valuable_tips"
+    },
+    {
+      "reply_emoji": "❤️",
+      "reply_text": "Love this",
+      "starling_key": "dm_suggestreply_love_this"
+    },
+    {
+      "reply_emoji": "🧠",
+      "reply_text": "Thought-provoking!",
+      "starling_key": "dm_suggestreply_thought_provoking"
+    }
+  ],
+  "streetinterviewssocialexperiments": [
+    {
+      "reply_emoji": "😬",
+      "reply_text": "Cringe",
+      "starling_key": "dm_suggestreply_cringe"
+    },
+    {
+      "reply_emoji": "👀",
+      "reply_text": "Wait a sec",
+      "starling_key": "dm_suggestreply_wait_a_sec"
+    },
+    {
+      "reply_emoji": "🤓",
+      "reply_text": "Intriguing",
+      "starling_key": "dm_suggestreply_intriguing"
+    },
+    {
+      "reply_emoji": "🗣",
+      "reply_text": "Speak up",
+      "starling_key": "dm_suggestreply_speak_up"
+    },
+    {
+      "reply_emoji": "😳",
+      "reply_text": "The audacity",
+      "starling_key": "dm_suggestreply_the_audacity"
+    }
+  ]
+}
