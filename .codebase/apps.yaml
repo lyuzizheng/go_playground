@@ -1,0 +1,41 @@
+# https://bytedance.feishu.cn/wiki/wikcnvSDfFHKjDN5D0A0ufpvDnc
+codecov:
+  status:
+    project:
+      default:
+        threshold: 2%
+        base: "change"
+        paths:
+          - "!gen/"
+          - "!scripts/"
+          - "!**/gen/**.go"
+          - "!**/im_proto/**.go"
+          - "!**/kitex_gen/**.go"
+          - "!**/thrift_gen/**.go"
+          - "!**/clients/**.go"
+          - "!**/thrift/**.go"
+          - "!**/mock/**.go"
+          - "!**.gen.go"
+          - "!**.pb.go"
+          - "!**mock*.go"
+          - "!kite.go"
+          - "!idls.go"
+    diff:
+      default:
+        minimum_coverage: 50%
+        if_not_found: error
+        paths:
+          - "!gen/"
+          - "!scripts/"
+          - "!**/gen/**.go"
+          - "!**/im_proto/**.go"
+          - "!**/kitex_gen/**.go"
+          - "!**/thrift_gen/**.go"
+          - "!**/clients/**.go"
+          - "!**/thrift/**.go"
+          - "!**/mock/**.go"
+          - "!**.gen.go"
+          - "!**.pb.go"
+          - "!**mock*.go"
+          - "!kite.go"
+          - "!idls.go"
