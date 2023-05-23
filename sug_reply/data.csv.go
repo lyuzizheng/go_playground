@@ -632,6 +632,9 @@ func SugReply() {
 	jsonx.UnmarshalFromString(category, &categoryMap)
 	jsonx.UnmarshalFromString(rawData, &rawDataMap)
 
+	fmt.Println("category length : %v", len(categoryMap))
+	fmt.Println("rawdata length : %v", len(rawDataMap))
+
 	for key2, value2 := range categoryMap {
 		value2 = strings.ReplaceAll(value2, "_", "")
 		categoryMap[key2] = strings.ToLower(value2)
@@ -642,8 +645,9 @@ func SugReply() {
 		key3 = strings.ReplaceAll(key3, "&", "")
 		key3 = strings.ReplaceAll(key3, ",", "")
 		key3 = strings.ReplaceAll(key3, "-", "")
-		rawDataMap[strings.ToLower(key3)] = value
 		delete(rawDataMap, key)
+		rawDataMap[strings.ToLower(key3)] = value
+
 	}
 
 	for key, value := range rawDataMap {
@@ -654,6 +658,7 @@ func SugReply() {
 			}
 		}
 	}
+	fmt.Println("rawdata after length : %v", len(rawDataMap))
 
 	fmt.Println(jsonx.ToString(rawDataMap))
 }

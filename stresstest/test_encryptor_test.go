@@ -125,3 +125,12 @@ func BenchmarkDoZlibCompress2PoolP(b *testing.B) {
 		}
 	})
 }
+
+func BenchmarkDoLZ4compress(b *testing.B) {
+	b.ResetTimer()
+	b.RunParallel(func(pb *testing.PB) {
+		for pb.Next() {
+			DoLZ4Compress(getInput())
+		}
+	})
+}
