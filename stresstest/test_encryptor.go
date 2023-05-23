@@ -2,6 +2,7 @@ package stresstest
 
 import (
 	"bytes"
+	"code.byted.org/im_cloud/common_tiktok/pkg/lz4"
 	"compress/zlib"
 	"io/ioutil"
 	"sync"
@@ -115,4 +116,9 @@ func DoZlibCompress2Pool(data []byte) ([]byte, error) {
 	compressedData := buf.Bytes()
 	bufferPool2.Put(buf)
 	return compressedData, nil
+}
+
+func DoLZ4Compress(data []byte) ([]byte, error) {
+	result, _, _ := lz4.Compress(data)
+	return result, nil
 }
