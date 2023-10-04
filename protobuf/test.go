@@ -13,14 +13,14 @@ var intArray = []byte{18, 217, 20, 10, 56, 10, 0, 18, 20, 10, 18, 67, 111, 108, 
 
 func main() {
 
-	var content proto_gen_go.MessageContent
+	// var content proto_gen_go.MessageContent
 
-	err := proto.Unmarshal(intArray, &content)
-	if err != nil {
-		fmt.Println(err.Error())
-	}
-	fmt.Println(jsonx.ToString(content))
-	fmt.Println("============")
+	// err := proto.Unmarshal(intArray, &content)
+	// if err != nil {
+	// 	fmt.Println(err.Error())
+	// }
+	// fmt.Println(jsonx.ToString(content))
+	// fmt.Println("============")
 
 	//pbBytes, err := hex.DecodeString(pbStr)
 	//if err != nil {

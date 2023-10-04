@@ -1,7 +1,7 @@
 package interfaces
 
 import (
-	"code.byted.org/lyuzizheng/playground/utils"
+	"playground/utils"
 	"fmt"
 	"reflect"
 	"strconv"

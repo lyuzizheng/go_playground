@@ -1,7 +1,7 @@
 package context
 
 import (
-	"code.byted.org/gopkg/context"
+	"context"
 	"fmt"
 	"os"
 	"os/signal"
