@@ -1,7 +1,6 @@
 package contest_266
 
-
-//Given a string word, return the sum of the number of vowels ('a', 'e', 'i', 'o', and 'u') in every substring of word.
+// Given a string word, return the sum of the number of vowels ('a', 'e', 'i', 'o', and 'u') in every substring of word.
 func CountVowels(word string) int64 {
 	vowelsMap := map[string]int{
 		"a": 0b1,
@@ -13,11 +12,11 @@ func CountVowels(word string) int64 {
 	var count int64
 	strLen := len(word)
 	for i := 0; i < strLen; i++ {
-        //if word[i] is vowel, add it to count
+		//if word[i] is vowel, add it to count
 		if _, ok := vowelsMap[string(word[i])]; ok {
 			a := int64(strLen)
 			index := i + 1
-			if index > strLen >> 1 {
+			if index > strLen>>1 {
 				index = strLen - index + 1
 			}
 			for j := 1; j <= index; j++ {
@@ -25,10 +24,9 @@ func CountVowels(word string) int64 {
 					count += a
 					a -= 2
 				}
-            }
+			}
 		}
-    }
+	}
 	return count
 
 }
-

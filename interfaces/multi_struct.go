@@ -19,7 +19,7 @@ func GetB() *B {
 	return interfaceMap["B"].(*B)
 }
 
-type A struct{
+type A struct {
 	Status string
 }
 
@@ -33,8 +33,7 @@ func (a *A) PrintStatus() InterfaceA {
 	return a
 }
 
-
-type B struct{
+type B struct {
 	Status string
 }
 
@@ -48,7 +47,7 @@ func (b *B) PrintStatus() InterfaceA {
 	return b
 }
 
-func StructToInterfaceTest()  {
+func StructToInterfaceTest() {
 	GetA().ChangeStatus()
 	GetA().PrintStatus()
 	GetB().ChangeStatus()

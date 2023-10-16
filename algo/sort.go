@@ -17,7 +17,6 @@ func sortF(input []float64) []float64 {
 	return input
 }
 
-
 var (
 	pluginPath = flag.String("in", "../plugins/dummy/dummy.so", "plugin path")
 	//dataSetSize = flag.Int("size", 10000000, "data set size")
@@ -49,8 +48,6 @@ func LoadPlugin() SortFunc {
 
 	return sortF
 }
-
-
 
 func RunGame() {
 

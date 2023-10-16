@@ -16,9 +16,7 @@ func getAllElements(root1 *TreeNode, root2 *TreeNode) []int {
 
 	return merge(&root1Slice, &root2Slice)
 
-
 }
-
 
 func inOrder(root *TreeNode, slice *[]int) {
 	if root == nil {
@@ -29,8 +27,8 @@ func inOrder(root *TreeNode, slice *[]int) {
 	inOrder(root.Right, slice)
 }
 
-//merge two sorted array
-func merge(slice1 *[]int, slice2 *[]int) []int{
+// merge two sorted array
+func merge(slice1 *[]int, slice2 *[]int) []int {
 	var result = make([]int, 0)
 	var i = 0
 	var j = 0

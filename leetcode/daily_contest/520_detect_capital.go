@@ -1,7 +1,7 @@
 package daily_contest
 
 const (
-	CapStart = 0x41
+	CapStart        = 0x41
 	CapEnd          = 0x5a
 	NonCapitalStart = 0x61
 	NonCapitalEnd   = 0x7a
@@ -12,7 +12,6 @@ func DetectCapitalUse(word string) bool {
 	if len(word) <= 1 {
 		return true
 	}
-
 
 	if word[0] >= CapStart && word[0] <= CapEnd {
 		result := true
@@ -47,6 +46,5 @@ func DetectCapitalUse(word string) bool {
 		}
 		return result
 	}
-
 
 }

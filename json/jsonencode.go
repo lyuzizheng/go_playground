@@ -1,7 +1,6 @@
 package json
 
 import (
-
 	"fmt"
 	"strings"
 )
@@ -16,8 +15,8 @@ var strToBeEncoded = `
 
 func JsonEncode() string {
 
-	withoutquotation := strings.ReplaceAll(strToBeEncoded, "\"","\\\"")
-	withoutNewLineChar := strings.ReplaceAll(withoutquotation, "\\n","\\\\n")
+	withoutquotation := strings.ReplaceAll(strToBeEncoded, "\"", "\\\"")
+	withoutNewLineChar := strings.ReplaceAll(withoutquotation, "\\n", "\\\\n")
 	removeNewLine := strings.ReplaceAll(withoutNewLineChar, "\n", "")
 
 	fmt.Println(removeNewLine)

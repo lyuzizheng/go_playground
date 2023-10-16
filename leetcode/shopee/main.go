@@ -50,7 +50,6 @@ import (
 //
 //}
 
-
 func main() {
 	var testNum int
 	fmt.Scanf("%d", &testNum)
@@ -95,7 +94,7 @@ func main() {
 				break
 			} else if upcross {
 				isOuterAndInnerCrossed[k][1] = true
-			}else if downcross {
+			} else if downcross {
 				isOuterAndInnerCrossed[k][0] = true
 			} else {
 				isOuterAndInnerCrossed[k][0] = true

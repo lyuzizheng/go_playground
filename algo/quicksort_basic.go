@@ -2,7 +2,6 @@ package algo
 
 import "fmt"
 
-
 func QuickSortBasic(input []int, startIndex int, endIndex int) {
 	if startIndex >= endIndex {
 		return
@@ -52,15 +51,14 @@ func QucikMergeSort(input []int) []int {
 	return result
 }
 
-
 func HeapSort(input []int) {
-	var heapify func (input []int, i int, len int) 
+	var heapify func(input []int, i int, len int)
 
-	heapify = func (input []int, i int, len int)  {
+	heapify = func(input []int, i int, len int) {
 		largest := i
 
-		leftIndex := i*2 +1 
-		rightIndex := i*2+2
+		leftIndex := i*2 + 1
+		rightIndex := i*2 + 2
 
 		if leftIndex < len && input[leftIndex] > input[largest] {
 			largest = leftIndex
@@ -76,17 +74,15 @@ func HeapSort(input []int) {
 	}
 
 	// Build heap
-	for i := len(input)/ 2 -1; i >= 0; i-- {
+	for i := len(input)/2 - 1; i >= 0; i-- {
 		heapify(input, i, len(input))
 	}
 
 	fmt.Println(input)
 
 	// Sort
-	for i := len(input) -1; i >= 0; i-- {
+	for i := len(input) - 1; i >= 0; i-- {
 		input[i], input[0] = input[0], input[i]
 		heapify(input, 0, i)
 	}
 }
-
-

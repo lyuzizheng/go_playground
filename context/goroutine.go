@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-func TestContext(ctx context.Context)  {
+func TestContext(ctx context.Context) {
 	time.Sleep(time.Second * 1)
 
 	fmt.Println("After sleep I wake up")
@@ -19,11 +19,9 @@ func TestContext(ctx context.Context)  {
 
 	fmt.Println("Get up")
 
-
-
 }
 
-func TestContextCancel()  {
+func TestContextCancel() {
 	ctx := context.Background()
 	ctx1, cancel := context.WithTimeout(ctx, time.Second*1)
 	var wg sync.WaitGroup
@@ -36,12 +34,9 @@ func TestContextCancel()  {
 	cancel()
 	wg.Wait()
 
-
-
 }
 
-
-func TestContextParent()  {
+func TestContextParent() {
 	parent, pCancel := context.WithCancel(context.Background())
 	child, _ := context.WithCancel(parent)
 	wg := &sync.WaitGroup{}
@@ -63,10 +58,7 @@ func TestContextParent()  {
 		os.Exit(0)
 	}
 
-
-
 }
-
 
 func work(wg *sync.WaitGroup, ctx context.Context) {
 	done := false

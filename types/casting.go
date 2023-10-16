@@ -1,8 +1,8 @@
 package types
 
 import (
-	"playground/utils"
 	"fmt"
+	"playground/utils"
 	"reflect"
 	"unsafe"
 )

@@ -40,15 +40,13 @@ import (
 //	return false
 //}
 
-
-func ChangeTime(){
-
+func ChangeTime() {
 
 	now := time.Now()
 
 	fmt.Printf("Time is : %v", now.String())
 
-	time.Sleep(time.Second*5)
+	time.Sleep(time.Second * 5)
 	newNow := time.Now()
 
 	fmt.Printf("Time is : %v", newNow.String())
@@ -61,7 +59,5 @@ func ChangeTime(){
 	afterChange := time.Now()
 
 	fmt.Printf("Time is : %v", afterChange.String())
-
-
 
 }

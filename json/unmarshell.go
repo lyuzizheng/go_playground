@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"reflect"
-
 )
 
 type Card interface {
@@ -17,13 +16,13 @@ type CardTemplate1 struct {
 	OpenChatId string `json:"open_chat_id"`
 
 	//Compulsory
-	Title      string               `json:"title"`
+	Title      string `json:"title"`
 	TitleColor string `json:"title_color"`
 	//Compulsory
 	Message string `json:"message"`
 	//Compulsory
-	FootNote string              `json:"foot_note"`
-	Extra  []string `json:"extra"`
+	FootNote string   `json:"foot_note"`
+	Extra    []string `json:"extra"`
 }
 
 func (c CardTemplate1) ToCard(defaultOpenChatID string) interface{} {
@@ -43,16 +42,13 @@ type CardTemplateDefault struct {
 
 }
 
-func (c CardTemplateDefault) ToCard(defaultOpenChatID string) interface{}{
+func (c CardTemplateDefault) ToCard(defaultOpenChatID string) interface{} {
 	return nil
-
 
 }
 
-
-func UnmarshallFromInterface(templateID string){
+func UnmarshallFromInterface(templateID string) {
 	rawCard := "{ \"message\" : \"Hello from demo tcc config template\"}"
-
 
 	var card interface{}
 
@@ -77,12 +73,11 @@ func UnmarshallFromInterface(templateID string){
 
 }
 
-func UnmarshallToInterface()  {
+func UnmarshallToInterface() {
 
 	//test1 := "{ \"message\" : \"Hello from demo tcc config template\"}"
 	//test2 := "[{ \"message\" : \"Hello from demo tcc config template\"},{ \"message\" : \"Hello from demo tcc config template\"}]"
 	test3 := "{ \"integer\" : 234, \"booltest\" : true}"
-
 
 	//var result interfaces{}
 	//err := json.Unmarshal([]byte(test1), &result)
@@ -115,5 +110,3 @@ func UnmarshallToInterface()  {
 	}
 
 }
-
-

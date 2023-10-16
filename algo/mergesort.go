@@ -4,11 +4,9 @@ import (
 	"sync"
 )
 
-
-
 const max = 50
 
-func mergesortParallel(s []float64) []float64{
+func mergesortParallel(s []float64) []float64 {
 	len := len(s)
 
 	if len > 1 {

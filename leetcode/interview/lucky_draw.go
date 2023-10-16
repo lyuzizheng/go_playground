@@ -76,12 +76,12 @@ func getLuckyDrawFunc(prizeMap map[int][]string) func() string {
 	}
 }
 
-//Interface has the format of prize name and weight
+// Interface has the format of prize name and weight
 type PrizeCollection [][]interface{}
 
 var a = PrizeCollection{
-	{"Dyson",1},
-	{"iPhone",2},
+	{"Dyson", 1},
+	{"iPhone", 2},
 	{"XBox", 3},
 	{"Gold", 5},
 	{"Knift", 10},
@@ -119,24 +119,24 @@ func getHopScotchFunc(collection PrizeCollection) func() string {
 	}
 }
 
-func getAliasFunc(collection PrizeCollection) func()string {
+func getAliasFunc(collection PrizeCollection) func() string {
 	totalPrizeNum := len(collection)
 	sum := 0
 	for i := 0; i < len(collection); i++ {
 		sum += collection[i][1].(int)
 	}
-	average	:= float64(sum) / float64(totalPrizeNum)
+	average := float64(sum) / float64(totalPrizeNum)
 	aliases := make([][]interface{}, totalPrizeNum)
 	for i := 0; i < totalPrizeNum; i++ {
 		aliases[i] = []interface{}{1.0, 0.0}
 	}
-	bigWeights := make([][]interface{},0)
-	smallWeights := make([][]interface{},0)
+	bigWeights := make([][]interface{}, 0)
+	smallWeights := make([][]interface{}, 0)
 	for index, prizeItem := range collection {
 		if float64(prizeItem[1].(int)) < average {
-			smallWeights = append(smallWeights, []interface{}{index, float64(prizeItem[1].(int)) / average })
+			smallWeights = append(smallWeights, []interface{}{index, float64(prizeItem[1].(int)) / average})
 		} else {
-			bigWeights = append(bigWeights, []interface{}{index, float64(prizeItem[1].(int)) / average })
+			bigWeights = append(bigWeights, []interface{}{index, float64(prizeItem[1].(int)) / average})
 		}
 	}
 	bigWeightsPosition := 0
@@ -154,7 +154,7 @@ func getAliasFunc(collection PrizeCollection) func()string {
 	rand.Seed(time.Now().UnixNano())
 	//return the func that used to do lucky draw
 	return func() string {
-		target := rand.Float64()*float64(len(collection))
+		target := rand.Float64() * float64(len(collection))
 		targetAlias := int(target)
 		targetWeight := target - float64(targetAlias)
 		if targetWeight < aliases[targetAlias][0].(float64) {
@@ -164,6 +164,3 @@ func getAliasFunc(collection PrizeCollection) func()string {
 		}
 	}
 }
-
-
-

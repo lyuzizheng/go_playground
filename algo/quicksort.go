@@ -4,14 +4,13 @@ import (
 	"sync"
 )
 
-
 func swap(a *[]float64, i int, j int) {
 	(*a)[i], (*a)[j] = (*a)[j], (*a)[i]
 }
 
 const (
 	concurrentLimit = 2000
-	quicksortLimit = 30
+	quicksortLimit  = 30
 )
 
 func QuickSort(f *[]float64, left int, right int) {
@@ -35,8 +34,8 @@ func QuickSort(f *[]float64, left int, right int) {
 	return
 }
 
-func ConcurrentQuickSort(f *[]float64, left int, right int ) {
-	if (right - left) <  concurrentLimit {
+func ConcurrentQuickSort(f *[]float64, left int, right int) {
+	if (right - left) < concurrentLimit {
 		QuickSort(f, left, right)
 		return
 	}
@@ -63,8 +62,8 @@ func ConcurrentQuickSort(f *[]float64, left int, right int ) {
 	return
 }
 
-func findPivot(f *[]float64, left int, right int)int{
-	middle := (left+right) >> 1
+func findPivot(f *[]float64, left int, right int) int {
+	middle := (left + right) >> 1
 	a := (*f)[left]
 	b := (*f)[middle]
 	c := (*f)[right]
@@ -87,7 +86,6 @@ func findPivot(f *[]float64, left int, right int)int{
 		return middle
 	}
 }
-
 
 func InsertionSort(f *[]float64, left int, right int) {
 	for i := left; i <= right; i++ {

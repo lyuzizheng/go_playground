@@ -1,11 +1,10 @@
 package contest_266
 
-
-//A substring is a contiguous (non-empty) sequence of characters within a string.
+// A substring is a contiguous (non-empty) sequence of characters within a string.
 //
-//A vowel substring is a substring that only consists of vowels ('a', 'e', 'i', 'o', and 'u') and has all five vowels present in it.
+// A vowel substring is a substring that only consists of vowels ('a', 'e', 'i', 'o', and 'u') and has all five vowels present in it.
 //
-//Given a string word, return the number of vowel substrings in word.
+// Given a string word, return the number of vowel substrings in word.
 func CountVowelSubstrings(word string) int {
 
 	startposition := -1
@@ -14,21 +13,21 @@ func CountVowelSubstrings(word string) int {
 
 	vowelsMap := map[string]int{
 		"a": 0b1,
-        "e": 0b10,
-        "i": 0b100,
-        "o": 0b1000,
-        "u": 0b10000,
+		"e": 0b10,
+		"i": 0b100,
+		"o": 0b1000,
+		"u": 0b10000,
 	}
 
 	if len(word) <= 4 {
-        return 0
-    }
+		return 0
+	}
 
 	fullfillConsition := 0b00000
 
 	//iterate character in word
 	for index, char := range word {
-        currentPosition = index
+		currentPosition = index
 		//check if current character is vowel
 		if val, ok := vowelsMap[string(char)]; ok {
 			if startposition == -1 {
@@ -42,12 +41,12 @@ func CountVowelSubstrings(word string) int {
 				startposition = -1
 			} else {
 				if fullfillConsition != 0b00000 {
-                    fullfillConsition = 0b00000
-                    startposition = -1
-                }
+					fullfillConsition = 0b00000
+					startposition = -1
+				}
 			}
 		}
-    }
+	}
 	if fullfillConsition == 0b11111 {
 		count += countOnlyVowelSubstring(word[startposition:len(word)], vowelsMap)
 	}
@@ -81,16 +80,14 @@ func countOnlyVowelSubstring(word string, vowelMap map[string]int) int {
 
 				first := string(word[startposition])
 				cowelsCount[first] = cowelsCount[first] - 1
-				startposition ++
+				startposition++
 
 			} else {
 				break
 			}
 		}
 
-
 	}
-
 
 	return count
 

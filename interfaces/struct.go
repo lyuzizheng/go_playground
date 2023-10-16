@@ -1,8 +1,8 @@
 package interfaces
 
 import (
-	"playground/utils"
 	"fmt"
+	"playground/utils"
 	"reflect"
 	"strconv"
 )

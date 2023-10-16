@@ -10,9 +10,8 @@ type RedirectService interface {
 
 type RedirectServiceImpl struct {
 	ParamsString string
-	Method func()
-	Params map[string]interface{}
-
+	Method       func()
+	Params       map[string]interface{}
 }
 
 func (r *RedirectServiceImpl) ParseMethod(command string) RedirectService {
@@ -28,11 +27,6 @@ func (r *RedirectServiceImpl) ParseParameters(command string) RedirectService {
 	return r
 }
 
-
-
 func (r *RedirectServiceImpl) Redirect(command string) error {
 	panic("implement me")
 }
-
-
-

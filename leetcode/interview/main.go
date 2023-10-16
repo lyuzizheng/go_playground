@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func main()  {
+func main() {
 	//getPrize := getAliasFunc(a)
 	getPrize := getAliasFunc(a)
 
@@ -20,7 +20,7 @@ func main()  {
 		}
 
 	}
-	allprizes , _ := json.Marshal(prizes)
+	allprizes, _ := json.Marshal(prizes)
 	fmt.Println(string(allprizes))
 	//collection := make([]int, 0, 100)
 	//collection = append(collection, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
@@ -38,6 +38,5 @@ func main()  {
 	//		break
 	//	}
 	//}
-
 
 }

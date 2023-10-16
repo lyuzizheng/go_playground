@@ -30,5 +30,5 @@ func dumpObject(path string, v reflect.Value, rootBaseAddr uintptr, localBaseAdd
 
 func dumpObjectDetail(path string, v reflect.Value, rootBaseAddr uintptr, localBaseAddr uintptr) {
 	fmt.Printf("%-25s%-25s0x%016x  %10v %11v %4v\n", path, v.Type().String(), v.UnsafeAddr(),
-		v.UnsafeAddr() - rootBaseAddr, v.UnsafeAddr() - localBaseAddr, v.Type().Size())
+		v.UnsafeAddr()-rootBaseAddr, v.UnsafeAddr()-localBaseAddr, v.Type().Size())
 }
