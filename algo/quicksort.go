@@ -9,7 +9,6 @@ func swap(a *[]float64, i int, j int) {
 	(*a)[i], (*a)[j] = (*a)[j], (*a)[i]
 }
 
-
 const (
 	concurrentLimit = 2000
 	quicksortLimit = 30

@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"strings"
 )
 
 // [-2,1,-3,4,-1,2,1,-5,4]
@@ -58,15 +59,23 @@ func FindSum(numArr []int) int {
 }
 
 func main() {
+	result := strings.Compare("10101101101111", "11101011011011")
+	fmt.Println(result)
 
-	//fmt.Print(FindSum([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
-	//fmt.Print(FindSum([]int{0, 0, 1, 1, 2, -100, 20, -10, 20}))
-	//fmt.Print(FindSum([]int{-5, -1, -3, -4, -10, -1, -90}))
+	// input := []int{10,2,534343,344,5,6,237}
+	// //algo.QuickSortBasic(input, 0, 6)
+	// algo.HeapSort(input)
 
-	fmt.Println(findPermuteAInB("abcdea", "okojieafabcdeaf"))
-	fmt.Println(findPermuteAInB("abcdea", "okojieafbcdeaf"))
+	// fmt.Println(input)
 
-	fmt.Println(findPermuteAInB("abcdea", "okojieafbcadeaf"))
+	// //fmt.Print(FindSum([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
+	// //fmt.Print(FindSum([]int{0, 0, 1, 1, 2, -100, 20, -10, 20}))
+	// //fmt.Print(FindSum([]int{-5, -1, -3, -4, -10, -1, -90}))
+
+	// fmt.Println(findPermuteAInB("abcdea", "okojieafabcdeaf"))
+	// fmt.Println(findPermuteAInB("abcdea", "okojieafbcdeaf"))
+
+	// fmt.Println(findPermuteAInB("abcdea", "okojieafbcadeaf"))
 }
 
 // A: "abcde"

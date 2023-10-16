@@ -1,0 +1,90 @@
+package contest_376
+
+/*
+Define two integers, num1 and num2, as follows:
+
+num1: The sum of all integers in the range [1, n] that are not divisible by m.
+num2: The sum of all integers in the range [1, n] that are divisible by m.
+Return the integer num1 - num2.
+*/
+func differenceOfSums(n int, m int) int {
+	var allSum = (1+n) * n / 2 
+	var times = n/m 
+
+	var divisibleSum = times * (m + times * m) / 2
+
+	var nonDivisibleSum = allSum - divisibleSum
+
+	return nonDivisibleSum - divisibleSum
+
+}
+
+
+/*
+You have n processors each having 4 cores and n * 4 tasks that need to be executed such that each core should perform only one task.
+
+Given a 0-indexed integer array processorTime representing the time at which each processor becomes available for the first time and a 0-indexed integer array tasks representing the time it takes to execute each task, return the minimum time when all of the tasks have been executed by the processors.
+
+Note: Each core executes the task independently of the others.
+*/
+
+
+func minProcessingTime(processorTime []int, tasks []int) int {
+
+	sort.Ints(processorTime)
+	sort.Sort(sort.Reverse(sort.IntSlice(tasks)))
+
+	fmt.Println(processorTime)
+	fmt.Println(tasks)
+
+	var max int 
+	for i, j:= 0, 0; i < len(processorTime); i, j = i+1, j+4 {
+		var time = processorTime[i] + tasks[j]
+		max = int(math.Max(float64(max), float64(time)))
+	}
+	return max
+}
+
+// s1 = "1100011000"
+// s2 = "0101001010"
+// diffChar = [0,3,5,8,11,14]
+func minOperations(s1 string, s2 string, x int) int {
+    var diffChar []int
+	
+	for i := 0; i < len(s1); i++ {
+		if s1[i] != s2[i] {
+			diffChar = append(diffChar, i)
+		}
+	}
+	if len(diffChar) % 2 != 0 {
+		return -1
+	}
+	if x == 1 {
+		return len(diffChar) / 2
+	}
+	var dp = make([][]int, len(diffChar))
+	for i := range dp {
+		dp[i] = make([]int, len(diffChar))
+		for j := range dp[i] {
+			dp[i][j] = -1
+		}
+	}
+	return solve(0, len(diffChar)-1, diffChar, x, dp)
+}
+
+
+func solve (i int, j int, diffs []int, x int, dp [][]int) int {
+	if i >= j {
+		return 0
+	}
+	if dp[i][j] != -1 {
+		return dp[i][j]
+	}
+	// possibilities
+	var a = diffs[i+1] - diffs[i] + solve(i+2, j, diffs, x, dp)
+	var b = diffs[j] - diffs[j-1] + solve(i, j-2, diffs, x, dp)
+	var c = x + solve(i+1, j-1, diffs, x, dp);
+
+	dp[i][j] = int(math.Min(math.Min(float64(a), float64(b)), float64(c)))
+	return dp[i][j]
+}
