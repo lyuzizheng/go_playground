@@ -1,10 +1,7 @@
 package contest_372
 
 import (
-	"container/list"
 	"strconv"
-
-	"github.com/elastic/go-elasticsearch/v8/typedapi/ilm/start"
 )
 
 /*
@@ -16,7 +13,7 @@ Return the minimum number of operations you need to perform to make the three st
 */
 
 func findMinimumOperations(s1 string, s2 string, s3 string) int {
-    // find the longest common prefix
+	// find the longest common prefix
 	var i int
 	for i = 0; i < len(s1) && i < len(s2) && i < len(s3); i++ {
 		if s1[i] != s2[i] || s2[i] != s3[i] {
@@ -29,10 +26,6 @@ func findMinimumOperations(s1 string, s2 string, s3 string) int {
 	var min = len(s1) - i + len(s2) - i + len(s3) - i
 	return min
 }
-
-
-
-
 
 /*
 There are n balls on a table, each ball has a color black or white.
@@ -49,11 +42,10 @@ It can be proven that the minimum number of steps needed is 2.
 */
 func minimumSteps(s string) int64 {
 	sum := 0
-    start := 0
+	start := 0
 	end := len(s) - 1
 	sB := []byte(s)
 
-	
 	var nextWhite int
 	for start <= end {
 		if sB[start] == '0' {
@@ -76,12 +68,8 @@ func minimumSteps(s string) int64 {
 		sum += nextWhite - start
 	}
 
-	
 	return int64(sum)
 }
-
-
-
 
 /*
 Given three integers a, b, and n, return the maximum value of (a XOR x) * (b XOR x) where 0 <= x < 2n.
@@ -89,7 +77,7 @@ Since the answer may be too large, return it modulo 109 + 7.
 Note that XOR is the bitwise XOR operation.
 */
 func maximumXorProduct(a int64, b int64, n int) int {
-    var min int64
+	var min int64
 	if a < b {
 		min = a
 	} else {
@@ -99,5 +87,7 @@ func maximumXorProduct(a int64, b int64, n int) int {
 	if len(binaryStr) < n {
 		return 0
 	}
+
+	return 0
 
 }

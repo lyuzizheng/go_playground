@@ -13,7 +13,7 @@ func Init() {
 	var err error
 	client, err = elasticsearch.NewClient(elasticsearch.Config{
 		Addresses: []string{config.GlobalConfig.ElasticSearch.Host},
-		APIKey:  config.GlobalConfig.ElasticSearch.ApiKey,
+		APIKey:    config.GlobalConfig.ElasticSearch.ApiKey,
 	})
 
 	if err != nil {

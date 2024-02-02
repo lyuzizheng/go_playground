@@ -39,4 +39,14 @@ func main() {
 	//	}
 	//}
 
+	//
+	results := []map[string][]int64{}
+	for i := 0; i < 100000; i++ {
+		result := DeliverCards([]int64{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 54}, []string{"A", "B", "C", "D"})
+		results = append(results, result)
+	}
+
+	testResult := testCards(results)
+	fmt.Println("testResult", testResult)
+
 }

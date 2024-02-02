@@ -1,8 +1,12 @@
 package main
 
-import elasticsearch "playground/elastic_search"
+import (
+	"playground/k8s"
+)
 
 func main() {
-	elasticsearch.Init()
+	k8s.Init()
+
+	k8s.TestK8s()
 
 }

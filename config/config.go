@@ -9,7 +9,7 @@ import (
 
 type Config struct {
 	ElasticSearch struct {
-		Host     string `yaml:"host"`
+		Host   string `yaml:"host"`
 		ApiKey string `yaml:"api_key"`
 	} `yaml:"elastic_search"`
 }

@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: debug-job
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      activeDeadlineSeconds: 90
+      containers:
+      - name: debug-container
+        image: busybox
+        command: ['sh', '-c', 'echo Starting the debug container && sleep 3600']
+  backoffLimit: 0
+  ttlSecondsAfterFinished: 0
