@@ -9,7 +9,7 @@ func QuickSortBasic(input []int, startIndex int, endIndex int) {
 	// Find pivot
 	var pivot = input[startIndex]
 	var mark = startIndex
-	var mark2 = startIndex
+	// var mark2 = startIndex
 	// Swap
 	for i := startIndex + 1; i <= endIndex; i++ {
 		if input[i] < pivot {

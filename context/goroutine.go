@@ -76,3 +76,29 @@ func work(wg *sync.WaitGroup, ctx context.Context) {
 	}
 	wg.Done()
 }
+
+func Task() {
+	ctx := context.Background()
+	timeoutCtx, cancelFunc := context.WithTimeout(ctx, 6*time.Second)
+	defer cancelFunc()
+
+	taskFinishChan := make(chan struct{})
+
+	go func() {
+			fmt.Println("starting to work on task")
+			time.Sleep(4 * time.Second)
+
+			fmt.Println("finish working on task")
+			taskFinishChan <- struct{}{}
+
+			fmt.Println("finish writing to channel")
+	}()
+	select {
+	case <-taskFinishChan:
+			fmt.Println("Finished the task within the timeout period")
+			break
+	case <-timeoutCtx.Done():
+			fmt.Println("Cannot finish the task within the timeout period, will return directly")
+			break
+	}
+}

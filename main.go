@@ -1,12 +1,10 @@
 package main
 
 import (
-	"playground/k8s"
+	"playground/context"
 )
 
 func main() {
-	k8s.Init()
-
-	k8s.TestK8s()
-
+	context.Task()
 }
+
