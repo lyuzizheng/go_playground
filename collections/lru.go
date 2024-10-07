@@ -22,10 +22,17 @@ func (c *LRUCache[T]) Put(key string, value T) {
 		item.Value = value
 		c.Data[key] = item
 		c.Queue.MoveToFront(item.KeyPtr)
-	} else {
-
+		return
+	} 
+	if c.Queue.Len() >= c.Capacity {
+		last := c.Queue.Back()
+		c.Queue.Remove(last)
+		delete(c.Data, last.Value.(*Node[T]).Key)
 	}
-
+	node := &Node[T]{Key: key, Value: value}
+	ptr := c.Queue.PushFront(node)
+	node.KeyPtr = ptr
+	c.Data[key] = node
 }
 
 

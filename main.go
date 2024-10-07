@@ -1,10 +1,14 @@
 package main
 
 import (
-	"playground/context"
+	"fmt"
 )
 
+
 func main() {
-	context.Task()
+
+
+	fmt.Println("Hello world")
+
 }
 
