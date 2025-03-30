@@ -9,7 +9,7 @@ func heapsort(items []int) {
 		items[0], items[i] = items[i], items[0]
 		heapify(items, i, 0)
 	}
-	
+
 }
 
 func buildHeap(items []int, n int) {
@@ -17,9 +17,6 @@ func buildHeap(items []int, n int) {
 		heapify(items, n, i)
 	}
 }
-
-
-
 
 func heapify(items []int, n int, index int) {
 	largest := index
@@ -40,7 +37,6 @@ func heapify(items []int, n int, index int) {
 	}
 
 }
-
 
 // An IntHeap is a min-heap of ints.
 type IntHeap []int

@@ -4,6 +4,7 @@ import (
 	"os"
 	"testing"
 )
+
 // TestImportTypesense is the test function
 func TestImportTypesense(t *testing.T) {
 	// Create a temporary JSONL file for testing

@@ -1,6 +1,5 @@
 package algo
 
-
 func QucikSortNew(input []int, startIndex int, endIndex int) {
 	if startIndex >= endIndex {
 		return
@@ -11,15 +10,15 @@ func QucikSortNew(input []int, startIndex int, endIndex int) {
 	// Swap
 	for i := startIndex + 1; i <= endIndex; i++ {
 		if input[i] < pivot {
-			mark ++
+			mark++
 			input[mark], input[i] = input[i], input[mark]
 		}
 	}
 
 	input[startIndex], input[mark] = input[mark], input[startIndex]
 
-	QucikSortNew(input, startIndex, mark - 1)
-	QucikSortNew(input, mark + 1, endIndex)
+	QucikSortNew(input, startIndex, mark-1)
+	QucikSortNew(input, mark+1, endIndex)
 
 }
 
@@ -87,17 +86,14 @@ func QucikMergeSort(input []int) []int {
 // 	}
 // }
 
-
-
 func HeapSort(input []int) {
 
 	var heapify func(input []int, i int, len int)
-	heapify = func(input []int, i int, len int){
+	heapify = func(input []int, i int, len int) {
 		largestIndex := i
 
 		leftChild := i*2 + 1
 		rightChild := i*2 + 2
-
 
 		if leftChild < len && input[leftChild] > input[largestIndex] {
 			largestIndex = leftChild
@@ -107,25 +103,22 @@ func HeapSort(input []int) {
 			largestIndex = rightChild
 		}
 
-
 		if largestIndex != i {
 			input[largestIndex], input[i] = input[largestIndex], input[i]
 			heapify(input, largestIndex, len)
 		}
 	}
 
-
 	// Build heap
-	for i := len(input)/2 -1; i >=0; i -- {
+	for i := len(input)/2 - 1; i >= 0; i-- {
 		heapify(input, i, len(input))
 	}
 
 	// sort
 
-	for i := len(input) - 1; i >=0 ; i-- {
+	for i := len(input) - 1; i >= 0; i-- {
 		input[i], input[0] = input[0], input[i]
 		heapify(input, 0, i)
 	}
-
 
 }
